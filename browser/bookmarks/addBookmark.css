@@ -1,0 +1,18 @@
+dialog#addBookmarkDialog {margin:0px;border:0px;padding:0px;background:url("chrome://global/skin/window-gradient-bg.top-cropped.short.alt2.png") repeat-x top left #181818;color:#bbbbbb}
+.dialog-content-box {padding:15px}
+.dialog-button-box {padding-right:10px;padding-left:10px;padding-top:9px;padding-bottom:8px}
+.folder-icon>.menulist-label-box>.menulist-icon,.folder-icon>.menu-iconic-left>.menu-iconic-icon {width:16px;height:16px}
+.folder-icon>.menu-iconic-left {display:-moz-box}
+/*.folder-icon {list-style-image:url("chrome://global/skin/icons/folder-item.png")!important;-moz-image-region:rect(0px,32px,16px,16px)!important}*/
+/* --- Use HD logo for folder icons --- */
+.folder-icon {list-style-image:url("chrome://global/skin/icons/folder-item.hd.png")!important;-moz-image-region:rect(0px,32px,16px,16px)!important}
+/* --- end --- */
+button#expander.up {list-style-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-up.png")}
+button#expander.down {list-style-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-dn.png")}
+button#expander.up:hover,button#expander.up:active {list-style-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-up-hov.png")}
+button#expander.down:hover,button#expander.down:active {list-style-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-dn-hov.png")}
+button#expander>.button-box {padding:4px;padding-top:3px;padding-right:5px}
+tree.bookmarksTree{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6;border:1px solid black;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;margin:5px 0px}
+menulist#name[droppable="false"] {}
+menulist#name[droppable="false"]>.menulist-editable-box {-moz-appearance:none;padding:2px 2px 3px 4px}
+menulist#name[droppable="false"]>.menulist-dropmarker,menulist#name[droppable="false"]>menupopup {display:none}

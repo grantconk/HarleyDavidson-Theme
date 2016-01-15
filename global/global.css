@@ -1,0 +1,186 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   mcdavis941@netscape.net
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@import url("chrome://global/locale/intl.css");
+@import url("chrome://global/skin/formatting.css");
+@import url("chrome://global/skin/thunderbird/tbird.css");
+@import url("chrome://xpi_skins/skin/xpi_skins.css");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url(http://www.w3.org/1999/xhtml);
+html|a,label.fflink-text,label.colorzilla-link,label#sitelink.link,text.colorzilla-url,label.link,label.url,.textLink,text.link{color:#b49351!important}
+html|a:hover,label.fflink-text:hover,label.colorzilla-link:hover,label#sitelink.link:hover,text.colorzilla-url:hover,label.link:hover,label.url:hover,.textLink:hover,text.link:hover{color:#d9a371!important}
+html|a:hover:active,label.fflink-text:hover:active,label.colorzilla-link:hover:active,label#sitelink.link:hover:active,text.colorzilla-url:hover:active,label.link:hover:active,label.url:hover:active,.textLink:hover:active,text.link:active{color:#d9a371!important}
+#browser tabs.tabbrowser-tabs {-moz-appearance:none;background:url("chrome://global/skin/tabbar/tabstrip-new.png") repeat-x top left #040404;padding:0px;border:0px;margin:0px}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-lft.png);-moz-image-region:auto;-moz-border-radius:0px}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up:hover:not([disabled="true"]) {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-lft-hov.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up:hover:active:not([disabled="true"]) {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-lft-act.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up[disabled="true"] {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-lft-dis.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-rit.png);-moz-image-region:auto;-moz-border-radius:0px}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down:hover:not([disabled="true"]) {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-rit-hov.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down:hover:active:not([disabled="true"]) {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-rit-act.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down[disabled="true"] {list-style-image:url(chrome://global/skin/tabbar/arrow-tabscroll-rit-dis.png)}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up .toolbarbutton-icon,tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down .toolbarbutton-icon{margin:0px 1px 0px 1px}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up:hover:not([disabled="true"]),tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down:hover:not([disabled="true"]){background:url("chrome://global/skin/tabbar/tabscroll-hover.png") top left repeat transparent}
+tabs.tabbrowser-tabs toolbarbutton.scrollbutton-up:hover:active:not([disabled="true"]),tabs.tabbrowser-tabs toolbarbutton.scrollbutton-down:hover:active:not([disabled="true"]){background:url("chrome://global/skin/tabbar/tabscroll-active.png") top left repeat transparent}
+.tabbrowser-tabs toolbarbutton.scrollbutton-up,.tabbrowser-tabs toolbarbutton.scrollbutton-down {margin-top:4px}
+radio {-moz-binding:url("chrome://global/skin/globalBindings.xml#radio")}
+menulist>menupopup,.menulist-menupopup {-moz-binding:url("chrome://global/content/bindings/popup.xml#popup-scrollbars")}
+.menulist-compact {-moz-binding:url("chrome://global/content/bindings/menulist.xml#menulist-compact")}
+progressmeter[mode="undetermined"] {-moz-binding:url("chrome://global/content/bindings/progressmeter.xml#progressmeter-undetermined")}
+window,page,dialog,wizard,prefwindow {-moz-appearance:none;color:#bbbbbb;font:message-box;background:none #181818}
+prefwindow {background:url("chrome://global/skin/window-gradient-bg.top-cropped.png") repeat-x top left #181818}
+prefwindow[type="child"] {background:url("chrome://global/skin/window-gradient-bg.top-cropped.short.alt2.png") repeat-x top left #181818}
+page {background:url("chrome://global/skin/default-window-gradient-bg.png") repeat-x top left #181818}
+window[windowtype="navigator:browser"] {-moz-binding:url("chrome://global/skin/subskinWindowOverlay.xml#theme")}
+wizard {padding:20px 20px 20px 20px}
+window.dialog {padding-top:8px;padding-bottom:10px;-moz-padding-start:8px;-moz-padding-end:10px}
+[wait-cursor] {cursor:wait!important}
+.message-icon,.alert-icon,.error-icon,.question-icon {width:32px;height:32px}
+.message-icon {list-style-image:url("chrome://global/skin/icons/Message.png")}
+.alert-icon {list-style-image:url("chrome://global/skin/icons/Warning.png")}
+.error-icon {list-style-image:url("chrome://global/skin/icons/Error.png")}
+.question-icon {list-style-image:url("chrome://global/skin/icons/Question.png")}
+iframe {border:none;width:100px;height:100px;min-width:10px;min-height:10px}
+/*statusbar {-moz-appearance:none;background:none #181818;border:0px;min-height:22px;padding:1px 0 1px 0}*/
+/* --- Put diamon plate at bottom --- */
+statusbar {background: url("chrome://global/skin/backgrounds/diamond-plate_opac15.png") #181818;border:0px;min-height:22px;padding:1px 0 1px 0}
+/* --- end --- */
+statusbarpanel {-moz-appearance:none;background-color:transparent;-moz-box-align:center;-moz-box-pack:center;padding:0px 4px;border-left:0px solid #808080;border-top:1px solid transparent;border-right:1px dotted #666666;border-bottom:1px solid transparent;margin:3px 0px 2px 0px}
+.statusbar-resizerpanel {-moz-box-align:end;-moz-box-pack:end;-moz-appearance:none;padding:0px 0px 0px 2px;border:none}
+.statusbarpanel-iconic,.statusbarpanel-menu-iconic {padding:0px 4px 0px 4px}
+.statusbarpanel-iconic-text {padding:0px 4px 0px 4px}
+resizer[dir="bottomright"] {-moz-appearance:none!important;background:url("chrome://browser/skin/gripper.png") no-repeat bottom right ;width:16px;height:16px;cursor:se-resize;opacity:0.5!important}
+#selectBookmarkDialog>bookmarks-tree,#selectBookmarkDialog>bookmarks-tree>tree{background-color:#b6b6b6}
+#sidebar-box {border:none}
+sidebarheader {border:none;border-top:1px solid #313131;border-bottom:1px solid black;min-height:25px;-moz-appearance:none;background:url("chrome://global/skin/sidebar/sidebarheader-gradient-bg.png") top left repeat-x #040404;color:white;border-bottom:0px;border-top:0px}
+#sidebar-box>sidebarheader {min-height:32px}
+sidebarheader>label {-moz-padding-start:0px}
+#bookmarksPanel,#history-panel{background-color:black}
+#bookmarksPanel>hbox,#history-panel>hbox{-moz-appearance:none!important;background-color:#1e1e1e!important;border-bottom:0px;border-top:0px;padding-top:4px}
+#historyTree,#bookmarks-view>tree,tree#bookmarks-view {-moz-appearance:none;margin:0px;border:5px solid #1e1e1e;-moz-border-top-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-right-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-bottom-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-left-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;background-color:#181818}
+#historyTree .tree-bodybox,#bookmarksPanel #bookmarks-view .tree-bodybox {background-image:url("chrome://global/skin/sidebar/sidebar-gradient-bg.alt2.png");background-position:bottom right;background-repeat:no-repeat}
+/*#bookmarksPanel treechildren::-moz-tree-image(title),#historyTree treechildren::-moz-tree-image(title),#historyTree treechildren::-moz-tree-image(title,container),#bookmarksPanel treechildren::-moz-tree-image(Name),#historyTree treechildren::-moz-tree-image(Name){list-style-image:url("chrome://global/skin/icons/folder-item.ondark.png")!important}*/
+/* --- Use HD logo for folder icon --- */
+#bookmarksPanel treechildren::-moz-tree-image(title),#historyTree treechildren::-moz-tree-image(title),#historyTree treechildren::-moz-tree-image(title,container),#bookmarksPanel treechildren::-moz-tree-image(Name),#historyTree treechildren::-moz-tree-image(Name){list-style-image:url("chrome://global/skin/icons/folder-item.ondark.hd.png")!important}
+/* --- end --- */
+#bookmarksPanel treechildren::-moz-tree-row,#historyTree treechildren::-moz-tree-row{-moz-appearance:none!important;border:0px;margin:1px 0px 0px 0px;background-color:transparent}
+#bookmarksPanel treechildren::-moz-tree-row(selected),#historyTree treechildren::-moz-tree-row(selected){background-color:#666666}
+#bookmarksPanel treechildren::-moz-tree-row(selected,focus),#historyTree treechildren::-moz-tree-row(selected,focus){background-color:#b49351}
+#bookmarksPanel treechildren::-moz-tree-cell-text,#historyTree treechildren::-moz-tree-cell-text{color:#bbbbbb}
+#bookmarksPanel treechildren::-moz-tree-cell-text(selected),#historyTree treechildren::-moz-tree-cell-text(selected){color:white}
+#bookmarksPanel treechildren::-moz-tree-separator,#historyTree treechildren::-moz-tree-separator{border-top:1px solid black;border-bottom:1px solid #484848}
+#bookmarksPanel treechildren::-moz-tree-twisty,#historyTree treechildren::-moz-tree-twisty{width:9px;list-style-image:url("chrome://global/skin/tree/twisty-clsd.ondark.png")}
+#bookmarksPanel treechildren::-moz-tree-twisty(open),#historyTree treechildren::-moz-tree-twisty(open){width:9px;list-style-image:url("chrome://global/skin/tree/twisty-open.ondark.png")}
+.toolbar-focustarget {-moz-user-focus:ignore!important}
+#test-button {-moz-appearance:none;background-color:transparent;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;border:1px solid white}
+wizardpage>description {-moz-margin-start:0px!important;-moz-margin-end:0px!important;margin-left:0px!important;margin-right:0px!important}
+wizardpage>vbox#dataSources {-moz-appearance:none!important}
+#moreInfoLink {text-decoration:none!important;color:#b49351!important}
+#moreInfoLink:hover:active {text-decoration:underline!important}
+dialog#domainMismatch,dialog#pageReportFirstTime,dialog#selectBookmarkDialog,dialog#changemp,dialog#ChangeActionDialog,dialog#history,dialog#certmanager,dialog#certDetails,dialog#editWebsiteCert,dialog#editCaCert,dialog#crlviewer,dialog#devicemanager,dialog#loaddevice,dialog#set_password,dialog#engineManager,dialog#chatzilla-window,dialog[windowtype="irc:chatzilla:channels"],dialog#sage_discover_feeds,dialog#reset_password,dialog#removemp,dialog#manage-window,dialog#openLocation,dialog#searchDialog,dialog#filterall,dialog#ssl_warning,dialog#incompatible,dialog#handling{padding:0}
+dialog#domainMismatch .dialog-content-box,dialog#pageReportFirstTime .dialog-content-box,dialog#selectBookmarkDialog .dialog-content-box,dialog#changemp .dialog-content-box,dialog#ChangeActionDialog .dialog-content-box,dialog#history .dialog-content-box,dialog#certmanager .dialog-content-box,dialog#certDetails .dialog-content-box,dialog#editWebsiteCert .dialog-content-box,dialog#editCaCert .dialog-content-box,dialog#crlviewer .dialog-content-box,dialog#devicemanager .dialog-content-box,dialog#loaddevice .dialog-content-box,dialog#set_password .dialog-content-box,dialog#engineManager .dialog-content-box,dialog#chatzilla-window .dialog-content-box,dialog[windowtype="irc:chatzilla:channels"] .dialog-content-box,dialog#reset_password .dialog-content-box,dialog#manage-window .dialog-content-box,dialog#openLocation .dialog-content-box,dialog#searchDialog .dialog-content-box,dialog#filterall .dialog-content-box,dialog#removemp .dialog-content-box,dialog#incompatible .dialog-content-box,dialog#handling .dialog-content-box{margin:10px 10px 5px 10px}
+dialog#domainMismatch .dialog-button-box,dialog#pageReportFirstTime .dialog-button-box,dialog#addBookmarkDialog .dialog-button-box,dialog#selectBookmarkDialog .dialog-button-box,dialog#changemp .dialog-button-box,dialog#ChangeActionDialog .dialog-button-box,dialog#history .dialog-button-box,dialog#certmanager .dialog-button-box,dialog#certDetails .dialog-button-box,dialog#editWebsiteCert .dialog-button-box,dialog#editCaCert .dialog-button-box,dialog#crlviewer .dialog-button-box,dialog#devicemanager .dialog-button-box,dialog#loaddevice .dialog-button-box,dialog#set_password .dialog-button-box,dialog.aboutHarleyDavidsonTheme .dialog-button-box,dialog#engineManager .dialog-button-box,dialog#openLocation .dialog-button-box,dialog#searchDialog .dialog-button-box,dialog#manage-window .dialog-button-box,dialog#ssl_warning .dialog-button-box,dialog#genericAbout .dialog-button-box,dialog#incompatible .dialog-button-box,dialog#handling .dialog-button-box{margin:0px;padding:10px 10px 10px 10px;background-color:#070707!important}
+dialog#chatzilla-window .dialog-button-box,dialog[windowtype="irc:chatzilla:channels"] .dialog-button-box,dialog#reset_password .dialog-button-box,dialog#removemp .dialog-button-box{margin:0px;padding:4px 5px 8px 5px;background-color:#070707}
+window#CookiesDialog>vbox.contentPane+hbox,window#PermissionsDialog>vbox.contentPane+hbox,window#DownloadActionsWindow>vbox.contentPane+separator+hbox{background-color:#070707!important;padding-top:10px}
+window#PermissionsDialog>vbox.contentPane {padding-bottom:4px}
+dialog#ssl_warning .dialog-content-box{margin:10px 10px 10px 10px}
+dialog#openLocation .dialog-button-box,dialog#searchDialog .dialog-button-box{margin:0px;background-color:#070707!important;padding:8px 10px 8px 10px}
+dialog#filterall .dialog-button-box{margin:0px;background-color:#070707!important;padding:4px 10px 8px 10px}
+@-moz-document
+url(chrome://global/content/printPageSetup.xul),url(chrome://mozapps/content/downloads/downloadProperties.xul),url(chrome://global/content/customizeCharset.xul){dialog{padding:0}
+.dialog-content-box{margin:10px 10px 5px 10px}
+.dialog-button-box {margin:0px;padding:4px 5px 8px 5px;background-color:#070707}
+}
+button>hbox.button-box>dropmarker {background-color:transparent}
+#bookmarksPanel>hbox>label{margin-top:1px;margin-right:5px;margin-bottom:5px}
+#bookmarksPanel>hbox>textbox#search-box{margin-top:1px;margin-right:5px;margin-bottom:1px;margin-left:0px}
+#bookmarksPanel>bookmarks-tree#bookmarks-view>tree>treechildren::-moz-tree-cell {margin-left:5px;padding-left:0}
+#history-panel>hbox>label{margin-top:1px;margin-right:5px;margin-bottom:5px}
+#history-panel>hbox>textbox#search-box{margin-top:1px;margin-right:5px;margin-bottom:1px;margin-left:0px}
+#history-panel>hbox>button#viewButton{margin-top:1px;margin-right:5px;margin-bottom:1px;margin-left:0px}
+#history-panel>tree#historyTree>treechildren::-moz-tree-cell {margin-left:5px;padding-left:0}
+prefwindow#SignonViewerDialog .prefWindow-dlgbuttons {border:0}
+textbox#txbTextNodeValue {margin:0px;border:0px;padding:0px;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center no-repeat #b6b6b6}
+dialog#crlviewer tree#crltree {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#certmanager tree#user-tree,dialog#certmanager tree#email-tree,dialog#certmanager tree#server-tree,dialog#certmanager tree#ca-tree{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#devicemanager tree#device_tree,dialog#devicemanager tree#info_tree{background-color:#b6b6b6}
+dialog#certDetails tree#treesetDump {background-color:#b6b6b6}
+dialog#certDetails tree#prettyDumpTree {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+prefwindow#SignonViewerDialog tree#signonsTree,prefwindow#SignonViewerDialog tree#rejectsTree{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#Console2BlacklistDialog tree#domains {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#engineManager tree#engineList {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+prefwindow#SignonViewerExceptionDialog tree {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+/*dialog#commonDialog {margin:0px;border:10px solid transparent;-moz-background-origin:padding;padding:10px 10px 10px 45px;background:url("chrome://global/skin/backgrounds/commonDialog.bg.1.png") left center no-repeat #181818}*/
+/* --- Use rear wheel --- */
+dialog#commonDialog {margin:0px;border:10px solid transparent;-moz-background-origin:padding;padding:10px 10px 10px 75px;background:url("chrome://global/skin/backgrounds/commonDialog.bg.wheel.png") left center no-repeat #181818}
+/* --- end --- */
+dialog#commonDialog image#info\.icon.question-icon {display:none}
+vbox#info\.box description {text-align:center}
+dialog#addonList {margin:0px;border:0px;padding:0px}
+dialog#addonList .dialog-content-box {margin:10px 10px 10px 10px;border:0px;padding:0px}
+dialog#addonList .dialog-button-box{margin:0px;border:0px;padding:5px 4px 8px 10px;background-color:#070707}
+dialog#addonList tree {border:0px;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#bmPropsWindow {margin:0px;border:0px;padding:0px}
+dialog#bmPropsWindow .dialog-content-box {margin:10px 10px 10px 10px;border:0px;padding:0px}
+dialog#bmPropsWindow vbox.box-padded {margin:0px;border:0px;padding:0px}
+dialog#bmPropsWindow vbox.box-padded>separator {display:none}
+dialog#bmPropsWindow row>label {-moz-margin-start:0px;margin:0}
+dialog#bmPropsWindow row>textbox {-moz-margin-end:0px}
+dialog#bmPropsWindow rows>checkbox#webpanel {-moz-padding-start:0px;-moz-padding-end:0px;-moz-margin-start:0px;-moz-box-pack:start;margin-top:7px}
+dialog#bmPropsWindow .dialog-button-box {margin:0px;border:0px;padding:5px 4px 8px 10px;background-color:#070707}
+/*#navigator-throbber {-moz-appearance:none;-moz-user-focus:ignore;margin:1px 5px 1px 0px!important;border:none!important;padding:0px!important;min-width:0;background-color:transparent;background-image:none;list-style-image:url("chrome://browser/skin/prelaunch.3.gif")}*/
+/* --- Change throbber in top right corner to default --- */
+#navigator-throbber {
+  min-width: 0;
+  list-style-image: url("chrome://browser/skin/Throbber-small.png");
+}
+/* --- end --- */
+#navigator-throbber .button-box {padding:0px 0px 0px 0px;background:none}
+#navigator-throbber[disabled="true"] .button-box {padding:0px 0px 0px 0px!important}
+/*#navigator-throbber[busy="true"] {list-style-image:url("chrome://browser/skin/inflight.2.gif")}
+toolbar[mode="text"] #navigator-throbber {list-style-image:url("chrome://browser/skin/prelaunch.3.23by16.gif")}
+toolbar[mode="text"] #navigator-throbber[busy="true"] {list-style-image:url("chrome://browser/skin/inflight.2.23by16.gif")}*/
+textbox#dialog\.input {margin-top:0px;margin-bottom:0px}
+textbox#dialog\.input .textbox-input-box {padding-top:2px;padding-bottom:2px}
+dialog#aboutDialog #userAgent {background-color:transparent;background-image:none;color:inherit}
+dialog#selectBookmarkDialog #bookmarks-view>tree .tree-bodybox {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+.notification-inner button {border-color:red!important;border:1px solid red!important}
+#autoscroller {height:28px;width:28px;border:none;margin:-14px;padding:0;background-image:url("chrome://global/skin/icons/autoscroll.png");background-color:transparent;background-position:right top;-moz-appearance:none}
+#autoscroller[scrolldir="NS"] {background-position:right center}
+#autoscroller[scrolldir="EW"] {background-position:right bottom}
+wizard#reportWizard #privacyFrame,wizard#reportWizard #finishExtendedFrame {-moz-appearance:none;border:1px solid black;margin:5px}

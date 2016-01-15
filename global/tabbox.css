@@ -1,0 +1,68 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   mcdavis941@netscape.net
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+tabs {-moz-appearance:none;border:0px;background:url("chrome://global/skin/tabbar/tabstrip-plain.png") bottom repeat-x transparent;padding:0px}
+.tabs-left,.tabs-right {border:none}
+tabpanels {-moz-appearance:none;padding:8px 10px 8px 10px;border:1px solid black;background:url("chrome://global/skin/tabpanels/tabpanels-gradient-bg.alt3.png") top left no-repeat #1e1e1e;border-top-width:0;-moz-border-top-colors:black;-moz-border-bottom-colors:black;-moz-border-right-colors:black;-moz-border-left-colors:black}
+tab {-moz-appearance:none;color:#bbbbbb;min-width:5em;margin:2px 2px 0px 0px;padding:4px 8px 4px 8px;-moz-border-radius-topleft:0px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:0px;-moz-border-radius-bottomleft:0px;border-top:2px solid black;border-right:1px solid black;border-bottom:1px solid black;border-left:2px solid black;-moz-border-top-colors:black #505050;-moz-border-right-colors:black;-moz-border-bottom-colors:black;-moz-border-left-colors:black #393939;background:url("chrome://global/skin/tabbar/tab-gradient-normal-bg.png") top left repeat-x #131313}
+tab:hover {color:white;-moz-border-top-colors:black #818181;-moz-border-right-colors:black;-moz-border-bottom-colors:#343434;-moz-border-left-colors:black #707070;background:url("chrome://global/skin/tabbar/tab-gradient-hover-bg.png") top left repeat-x #464646}
+tab:hover[first-tab="true"] {-moz-border-left-colors:black #393939}
+tab:active {color:white}
+tab[chromedir="rtl"] {}
+.tab-text {margin:0 0 0 1px!important}
+tab[selected="true"],tab[selected="true"]:hover,tab[selected="true"]:active {-moz-user-focus:normal;color:#dddddd;border-bottom:1px solid #131313;-moz-border-top-colors:black #575757;-moz-border-right-colors:black;-moz-border-bottom-colors:#2f2f2f;-moz-border-left-colors:black #464646;background:url("chrome://global/skin/tabbar/tab-gradient-selected-bg.png") top left repeat-x #2f2f2f}
+tab:focus>.tab-middle {outline:1px dotted #cccccc}
+tab[beforeselected="true"],tab[afterselected="true"][chromedir="rtl"] {}
+tab[afterselected="true"],tab[beforeselected="true"][chromedir="rtl"] {}
+tab[first-tab="true"] {}
+tab[first-tab="true"][selected="true"] {}
+.tab-bottom {min-width:5em;margin:0px 2px 2px 0px;padding:4px 8px 4px 8px;border-top:1px solid black;border-right:1px solid black;border-bottom:2px solid black;border-left:2px solid black;-moz-border-top-colors:black;-moz-border-right-colors:black;-moz-border-bottom-colors:black #505050;-moz-border-left-colors:black #393939;background:url("chrome://global/skin/tabbar/tab-bottom-gradient-normal-bg.png") bottom left repeat-x #131313}
+.tab-bottom:hover {color:white;-moz-border-top-colors:#343434;-moz-border-right-colors:black;-moz-border-bottom-colors:black #818181;-moz-border-left-colors:black #707070;background:url("chrome://global/skin/tabbar/tab-bottom-gradient-hover-bg.png") bottom left repeat-x #464646}
+.tab-bottom:active {color:white}
+.tab-bottom:hover[first-tab="true"] {-moz-border-left-colors:black #393939}
+.tab-bottom[selected="true"],.tab-bottom[selected="true"]:hover,.tab-bottom[selected="true"]:active {-moz-user-focus:normal;color:#dddddd;border-top:1px solid #131313;-moz-border-top-colors:#2f2f2f;-moz-border-right-colors:black;-moz-border-bottom-colors:black #575757;-moz-border-left-colors:black #464646;background:url("chrome://global/skin/tabbar/tab-bottom-gradient-selected-bg.png") bottom left repeat-x #2f2f2f}
+.tab-bottom[beforeselected="true"],.tab-bottom[afterselected="true"][chromedir="rtl"] {}
+.tab-bottom[afterselected="true"],.tab-bottom[beforeselected="true"][chromedir="rtl"] {}
+.tabs-bottom {border:0px;background:url("chrome://global/skin/tabbar/tabstrip-plain.png") top repeat-x transparent;padding:0}
+.tabs-bottom>.tabs-left,.tabs-bottom>.tabs-right {border-top:1px solid #cccccc;border-bottom:none}
+#browser tab.tabbrowser-tab {-moz-appearance:none;color:#bbbbbb;font-weight:normal!important;margin:0px 2px 0px 0px;margin-top:3px!important;padding:0px 5px!important;border:1px solid black!important;border-bottom:0px solid black!important;-moz-border-top-colors:black!important;-moz-border-right-colors:black!important;-moz-border-bottom-colors:none;-moz-border-left-colors:black!important;-moz-border-radius-topleft:6px!important;-moz-border-radius-topright:6px!important;-moz-border-radius-bottomright:0px;-moz-border-radius-bottomleft:0px;background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-bg.png") top left repeat-x transparent!important;-moz-background-clip:padding!important;min-height:25px!important}
+#browser tab.tabbrowser-tab .tab-text {margin-left:5px!important}
+#browser tab.tabbrowser-tab:not([selected="true"]):hover {background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-hover-bg.png") top left repeat-x transparent!important;-moz-background-clip:padding!important;color:white!important}
+#browser tab.tabbrowser-tab[selected="true"] {background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-selected-bg.png") top left repeat-x transparent!important;-moz-background-clip:padding!important;font-weight:bold!important;color:white!important}

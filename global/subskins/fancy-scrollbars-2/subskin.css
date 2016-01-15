@@ -1,0 +1,93 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2001
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Joe Hewitt (hewitt@netscape.com)
+ *   mcdavis941@netscape.net
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+scrollbar {-moz-appearance:none!important;-moz-binding:url("chrome://global/content/bindings/scrollbar.xml#scrollbar")!important;cursor:default!important;width:16px!important}
+scrollbar[orient="vertical"] {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/track-vertical.png") repeat-y #000000!important;width:16px!important}
+scrollbar[orient="horizontal"] {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/track-horizontal.png") repeat-x #000000!important;height:16px!important}
+thumb {-moz-appearance:none!important;border:0px solid black!important}
+thumb[orient="horizontal"] {min-height:16px!important;min-width:10px!important;background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-endcap.png") no-repeat top right!important}
+thumb[orient="horizontal"]:hover,thumb[orient="horizontal"]:active {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-endcap-hov.png") no-repeat top right!important}
+thumb>gripper {-moz-appearance:none!important;-moz-box-flex:1!important}
+thumb[orient="horizontal"]>gripper {margin:0px!important;margin-right:5px!important;min-height:16px!important;min-width:10px!important;background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-startcap.png") no-repeat top left!important}
+thumb[orient="horizontal"]:hover>gripper,thumb[orient="horizontal"]:active>gripper {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-startcap-hov.png") no-repeat top left!important}
+thumb[orient="vertical"] {min-height:10px!important;min-width:16px!important;background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-bottomcap.png") no-repeat bottom left!important}
+thumb[orient="vertical"]:hover,thumb[orient="vertical"]:active {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-bottomcap-hov.png") no-repeat bottom left!important}
+thumb[orient="vertical"]>gripper {margin:0px!important;margin-bottom:5px!important;min-height:10px!important;min-width:16px!important;background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-topcap.png") no-repeat top left!important}
+thumb[orient="vertical"]:hover>gripper,thumb[orient="vertical"]:active>gripper {background:url("chrome://global/skin/subskins/fancy-scrollbars-2/thumb-topcap-hov.png") no-repeat top left!important}
+scrollcorner {-moz-appearance:none!important;-moz-binding:url(chrome://global/content/bindings/scrollbar.xml#scrollbar-base)!important;cursor:default!important;background-color:#0f0f0f!important}
+scrollbarbutton {-moz-appearance:none!important;border:0px solid black!important;background-attachment:scroll!important;-moz-background-origin:border!important;background:#070707 no-repeat top left!important;min-width:23px!important;min-height:16px!important}
+scrollbar[orient="vertical"]>scrollbarbutton {min-width:16px!important;min-height:23px!important}
+scrollbarbutton[type="increment"] {margin:0px 0px 0px -5px!important;background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-rit.png")!important}
+scrollbarbutton[type="increment"]:hover:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-rit-hov.png")!important}
+scrollbarbutton[type="increment"]:hover:active:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-rit-act.png")!important}
+scrollbarbutton[type="increment"][disabled="true"] {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-rit-dis.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="increment"] {margin:-5px 0px 0px 0px!important;background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-dn.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="increment"]:hover:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-dn-hov.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="increment"]:hover:active:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-dn-act.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="increment"][disabled="true"] {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-dn-dis.png")!important}
+scrollbarbutton[type="decrement"] {margin:0px -5px 0px 0px!important;background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-lft.png")!important}
+scrollbarbutton[type="decrement"]:hover:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-lft-hov.png")!important}
+scrollbarbutton[type="decrement"]:hover:active:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-lft-act.png")!important}
+scrollbarbutton[type="decrement"][disabled="true"] {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-lft-dis.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"] {margin:0px 0px -5px 0px!important;background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-up.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"]:hover:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-up-hov.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"]:hover:active:not([disabled="true"]) {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-up-act.png")!important}
+scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"][disabled="true"] {background-image:url("chrome://global/skin/subskins/fancy-scrollbars-2/arrow-scrollbar-up-dis.png")!important}
+@media print {html|div scrollbar {-moz-appearance:scrollbartrack-horizontal!important;
+-moz-binding:url("chrome://global/content/bindings/scrollbar.xml#scrollbar")!important;cursor:default!important;background:url("chrome://global/skin/scrollbar/slider.gif") scrollbar!important}
+html|div scrollbar[orient="vertical"]{-moz-appearance:scrollbartrack-vertical!important}
+html|div thumb,html|div scrollbarbutton {border:2px solid!important;-moz-border-top-colors:#DFDFDF white!important;-moz-border-right-colors:black #808080!important;-moz-border-bottom-colors:black #808080!important;-moz-border-left-colors:#DFDFDF white!important;background-color:#cccccc!important}
+html|div thumb {-moz-appearance:scrollbarthumb-vertical!important;min-height:8px!important}
+html|div thumb[orient="horizontal"] {-moz-appearance:scrollbarthumb-horizontal!important;min-width:8px!important}
+html|div thumb>gripper {-moz-appearance:scrollbargripper-vertical!important}
+html|div thumb[orient="horizontal"]>gripper {-moz-appearance:scrollbargripper-horizontal!important}
+html|div scrollbarbutton {background:#C0C0C0 no-repeat 0px 1px!important;min-width:16px!important;min-height:16px!important}
+html|div scrollbarbutton:hover:active {-moz-border-top-colors:#808080 #C0C0C0!important;-moz-border-right-colors:#808080 #C0C0C0!important;-moz-border-bottom-colors:#808080 #C0C0C0!important;-moz-border-left-colors:#808080 #C0C0C0!important;background-position:1px 2px!important}
+html|div scrollbarbutton[type="increment"] {-moz-appearance:scrollbarbutton-right!important;background-image:url("chrome://global/skin/arrow/arrow-rit.png")!important}
+html|div scrollbarbutton[type="increment"][disabled="true"] {background-image:url("chrome://global/skin/arrow/arrow-rit-dis.png")!important}
+html|div scrollbar[orient="vertical"]>scrollbarbutton[type="increment"] {-moz-appearance:scrollbarbutton-down!important;background-image:url("chrome://global/skin/arrow/arrow-dn.png")!important}
+html|div scrollbar[orient="vertical"]>scrollbarbutton[type="increment"][disabled="true"] {background-image:url("chrome://global/skin/arrow/arrow-dn-dis.png")!important}
+html|div scrollbarbutton[type="decrement"] {-moz-appearance:scrollbarbutton-left!important;background-image:url("chrome://global/skin/arrow/arrow-lft.png")!important}
+html|div scrollbarbutton[type="decrement"][disabled="true"] {background-image:url("chrome://global/skin/arrow/arrow-lft-dis.png")!important}
+html|div scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"] {-moz-appearance:scrollbarbutton-up!important;background-image:url("chrome://global/skin/arrow/arrow-up.png")!important}
+html|div scrollbar[orient="vertical"]>scrollbarbutton[type="decrement"][disabled="true"] {background-image:url("chrome://global/skin/arrow/arrow-up-dis.png")!important}
+}
+thumb,scrollbarbutton {background-attachment:scroll!important;-moz-background-origin:border!important}

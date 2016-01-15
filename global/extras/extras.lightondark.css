@@ -1,0 +1,60 @@
+* { margin:0px; padding:0px; }
+html { margin:0px; padding:0px; }
+body { margin:0px; padding:0px; }
+p,dl,multicol { margin:1em 0px; }
+dd { margin-left:40px; }
+blockquote { margin:1em 40px; }
+h1 { margin:.67em 0px; }
+h2 { margin:.83em 0px; }
+h3 { margin:1em 0px; }
+h4 { margin:1.33em 0px; }
+h5 { margin:1.67em 0px; }
+h6 { margin:2.33em 0px; }
+listing { margin:1em 0px; }
+xmp,pre,plaintext { margin:1em 0px; }
+table { border-spacing:2px; border-collapse:collapse; margin-top:0px; margin-bottom:0px; }
+td { padding:1px; }
+th { padding:1px; }
+ul,menu,dir { margin:1em 0px; padding-left:40px; }
+ol { margin:1em 0px; padding-left:40px; }
+hr { margin:0.5em auto; }
+body {background:url('chrome://global/skin/extras/top-gradient-bg.alt1.png') top left repeat-x black;padding:20px}
+* { color:#cccccc; font-family:georgia,verdana,tahoma,trebuchet ms,arial,helvetica,san serif; font-size:10pt; line-height:1.7; }
+#body { margin-left:auto; margin-right:auto; }
+#top-round-corner-strip {height:5px;background:url(chrome://global/skin/extras/top-left-round-corner.png) top left no-repeat transparent;-moz-border-radius:0px;max-width:800px;margin-left:auto; margin-right:auto;min-height:5px;max-height:5px}
+#top-right-round-corner {background:url(chrome://global/skin/extras/top-right-round-corner.png) top right no-repeat #101010;height:5px;margin-left:5px}
+#inner-body {background:none #282828;margin:0px;padding:20px;-moz-border-radius:10px;max-width:800px;margin-left:auto; margin-right:auto}
+#inner-body-1 {background:none #282828;margin:0px;padding:0px;max-width:800px;margin-left:auto; margin-right:auto;background-image:url(chrome://global/skin/extras/header-gradient-bg.png);background-repeat:repeat-x;background-position:top left;border:none;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;-moz-border-radius:0px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-moz-background-clip:border}
+#inner-body-2 {margin:0px;padding:20px;padding-top:1px;border:none;-moz-border-radius:0px;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;background:none transparent}
+.subtopic-group {margin-left:20px}
+#nnl-footer {height:40px;border:none;border-top:1px solid #966C32;padding:0px;padding-top:9px}
+#nnl-footer-logo {height:33px;width:172px;background:url(chrome://global/skin/extras/nnl-footer-logo.png) top left no-repeat transparent;float:left;margin:0px;border:none;padding:0px}
+#nnl-footer-text {text-align:right;margin:0px;margin-top:-4px;margin-left:173px}
+#paypal-question,#paypal-question a{font-size:8pt;line-height:1.4}
+#paypal-question{margin-left:auto;margin-right:auto}
+#movie-group-alignment {text-align:right;width:100%;margin:0px;margin-top:40px;margin-bottom:150px}
+#movie-group {text-align:center;width:425px;margin-left:auto;background:url(chrome://global/skin/extras/colorblock.282828.60pct.png) top left repeat transparent}
+#movie-object-container{height:350px;margin-left:auto;margin-right:auto}
+#movie-object {margin-top:-6px}
+#video-subtext {margin-left:10px;margin-right:10px;padding-bottom:10px}
+#movie-title {color:white}
+pre.code {background-color:#404040;border:1px solid #666666;border-left-width:7px;padding:0.8em}
+.code {font-family:"courier new",monospace;font-size:8pt;margin:20px;line-height:1.3}
+.code-inline {font-family:"courier new",monospace;font-size:9pt}
+.compact-code {font-family:"courier new",monospace;font-size:7pt;margin:20px}
+.code-highlight{background-color:#ffddaa}
+ol.code-listing {margin-left:20px}
+ol.code-listing li {list-style:none;white-space:pre;margin:0;padding:0;margin-bottom:0.2ex}
+table.code-listing {margin-left:20px;margin-right:20px}
+table.code-listing td {background-color:#e5e5e5;width:5em}
+table.code-listing td+td {background-color:transparent;width:0.5em}
+table.code-listing td+td+td {background-color:#f5f5f5;width:100%}
+dt {margin-top:0.8em;margin-bottom:0.5em;font-weight:bold}
+h6 {color:#f0f0f0;margin-bottom:1.2em}
+#backtrack-nav {background:url(chrome://global/skin/extras/backtrack-symbol.png) left center no-repeat transparent;margin-left:-10px;padding-left:10px}
+.backtracknav-parent,.backtracknav-parent a {color:#999999;font-size:9pt}
+.backtracknav-current-page {color:white;font-size:9pt}
+li {margin-bottom:0.3em}
+a {text-decoration:none;border-bottom:1px dotted #eeeeee}
+a:hover{text-decoration:none;border-bottom:1px dotted #d9a371;color:#d9a371}
+a:active{border-bottom:none;text-decoration:underline;color:#f9c371}

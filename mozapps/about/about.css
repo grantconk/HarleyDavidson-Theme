@@ -1,0 +1,21 @@
+#aboutHarleyDavidson {margin:0px;border:0px;padding:0px;min-height:160px;width:30em;max-width:45em}
+#aboutHarleyDavidson .dialog-content-box {margin:10px 10px 10px 10px;border:0px;padding:0px}
+#aboutHarleyDavidson .dialog-button-box {margin:0px;border:0px;padding:5px 4px 8px 10px;background-color:#070707;-moz-box-pack:end}
+label {margin:0px;padding:0px}
+description {margin:0px;padding:0px}
+#clientBox {}
+#extensionName {font-size:larger;font-weight:bold}
+#extensionVersion {}
+#extensionHomepage {cursor:pointer}
+#groove {}
+/*#aboutHeader {min-height:58px;background:url("chrome://global/skin/logos/nasa-logo.wizard-header.png") bottom right no-repeat transparent;padding-bottom:10px;border-bottom:2px solid black;-moz-border-bottom-colors:#333333 black;margin-bottom:10px}*/
+/* --- show HD logo --- */
+#aboutHeader {min-height:58px;background:url("chrome://global/skin/logos/hd-logo.wizard-header.png") bottom right no-repeat transparent;padding-bottom:10px;border-bottom:2px solid black;-moz-border-bottom-colors:#333333 black;margin-bottom:10px}
+/* --- end --- */
+#extensionDescription,#extensionContributors,#creatorBox,#contributorsBox {}
+#extensionCreator,.contributor {margin:0}
+#extensionCreatorLabel,#extensionContributors,#disclaimerLabel,#paypalLabel,#launchLabel,#famfamfamLabel {padding:2px 0 3px;margin-top:3px;font-weight:bold}
+button#greetz {height:1em;width:4em;background-color:transparent;border:1px solid transparent;list-style-image:none;-moz-box-flex:0}
+#launchLink,#paypalLink,#famfamfamLink,#famfamfamCCLink {margin-top:-1px}
+#launchVideoBox {background:url("chrome://mozapps/skin/about/untitled-2.png") bottom right no-repeat transparent}
+#paypalBox {}

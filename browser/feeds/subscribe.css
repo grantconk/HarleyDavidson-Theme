@@ -1,0 +1,71 @@
+@import url("chrome://global/skin/button.onlight.css");
+@import url("chrome://global/skin/menulist.onlight.css");
+dialog#subscribeOptions {margin:0px;border:0px;padding:0px}
+dialog#subscribeOptions .dialog-content-box {margin:10px 10px 5px 10px;border:0px;padding:0px}
+dialog#subscribeOptions .dialog-button-box {margin:0px;border:0px;padding:4px 5px 11px 10px;background-color:#070707}
+radio#readerBookmarks+separator+button,#feedWhatAreLiveBookmarks,button.plain.link {list-style-image:none}
+*[hidden]{display:none}
+html {background:black;font:3mm message-box,tahoma,arial,helvetica,sans-serif;font:message-box}
+body {margin:0;padding:0 3em;color:black;background-color:black;font:message-box}
+#feedBody,#feedError {border:10px solid white;-moz-border-radius:0px;padding:2em 3em 3em 3em;-moz-padding-start:30px;margin:0 auto 2em auto;background:white;color:black;font:message-box}
+#feedHeader {border:10px solid white;-moz-border-radius:0px;padding:10px 3em;margin:10px auto 0px auto;font-size:100%;background-color:#eeeeee;color:#333333;background:url("chrome://browser/skin/feeds/feedIcon.png") 1.4em 2em no-repeat #eeeeee}
+#feedHeader.feedBackground {background:url("chrome://browser/skin/feeds/feedIcon.png") 1.4em 2em no-repeat #eeeeee}
+#feedHeader.videoPodcastBackground {background:url("chrome://browser/skin/feeds/videoFeedIcon.png") 1.4em 2em no-repeat #eeeeee}
+#feedHeader.audioPodcastBackground {background:url("chrome://browser/skin/feeds/audioFeedIcon.png") 1.4em 2em no-repeat #eeeeee}
+#feedHeader[dir="rtl"] {background-position:100% 10%}
+#feedIntroText {display:none;margin-left:2.5em;padding-bottom:0.1em}
+#feedHeader[firstrun="true"] #feedIntroText {display:block}
+#feedSubscriptionInfo1 {margin-bottom:0.5em}
+#feedSubscriptionInfo2 {margin-top:0.5em}
+#feedSubscribeLine {padding:0.9em 0 1em 0;-moz-border-radius:0px;margin-left:2.1em}
+#feedHeader[firstrun="true"] #feedSubscribeLine {margin-left:2.5em}
+#handlersMenuList {color:#bbbbbb}
+#feedSubscribeHandler {border:0;padding:3px}
+#feedSubscribeOptionsGroup {-moz-border-radius:0px;border:2px solid #666666;margin-bottom:.3em}
+#feedSubscribeOptionsGroupTitle {-moz-padding-start:.3em;-moz-padding-end:.3em}
+.field {-moz-appearance:textfield}
+.styleLessBorderLess {-moz-appearance:none;border:none}
+#feedSubscribeOptions {-moz-margin-start:5em;-moz-margin-end:5em;margin-top:2em}
+#feedChangeSubscribeOptions {-moz-margin-start:.4em}
+#feedSubscribeDoneChangingOptions {font-weight:bold}
+checkbox {-moz-appearance:none;-moz-box-align:center;margin:2px 4px;padding-top:1px;padding-bottom:1px;-moz-padding-start:4px;-moz-padding-end:2px;color:#333333}
+.checkbox-label-box {-moz-margin-start:2px;border:1px solid transparent;padding:0px 1px}
+.checkbox-icon {-moz-margin-end:2px}
+.checkbox-label {margin:0!important}
+checkbox:focus>.checkbox-label-box {border:1px dotted #666666}
+checkbox[disabled="true"] {color:#C4C4C4!important}
+.checkbox-check {-moz-appearance:none;-moz-box-align:center;border:none;min-width:13px;min-height:13px;background:none transparent;list-style-image:none}
+.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 0px 13px 13px 0px )}
+checkbox[disabled="true"]>.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 39px 13px 52px 0px )}
+checkbox:hover:active:not([disabled="true"])>.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 26px,13px,39px,0px )}
+checkbox[checked="true"]>.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 0px 26px 13px 13px )}
+checkbox[checked="true"][disabled="true"]>.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 39px 26px 52px 13px )}
+checkbox[checked="true"]:hover:active:not([disabled="true"])>.checkbox-check {list-style-image:url("chrome://global/skin/checkbox/checkbox-multistate.onlight.png");-moz-image-region:rect( 26px,26px,39px,13px )}
+h1 {color:#b49351;font-size:160%;border-bottom:1px solid #cccccc;padding-bottom:5px;margin:0 0 .5em 0}
+h2 {color:black;font-size:110%;font-weight:normal;margin:0 0 1.8em 0}
+#feedContent {}
+#feedContent .entry {background:url("chrome://browser/skin/feeds/documentItem.png") 0px 2px no-repeat transparent}
+#feedContent h3 {padding-left:20px;min-height:15px;font-size:100%;margin-bottom:0.4em}
+#feedContent .lastUpdated {color:#666666;margin-top:3px;margin-bottom:3px;font-weight:normal}
+#feedContent p {background-color:transparent;padding-bottom:0;margin:0px;padding-left:20px}
+#feedContent .entry+.entry {border-top:1px dotted #cccccc;margin-top:1em}
+#feedTitleLink {float:right;margin:0 0 0 .6em}
+a[href] img {border:none}
+a {text-decoration:underline;color:#b49351}
+a:hover,a:active {text-decoration:underline}
+#feedTitleContainer {margin:0 0 0 0}
+#feedTitleImage {margin:0 0 0 .6em;border-left:10px solid white;border-bottom:5px solid white}
+.feedEntryContent {font-size:100%}
+.link {color:#b49351;text-decoration:underline;cursor:pointer}
+.link:hover:active {text-decoration:underline;color:#b49351}
+.plain {-moz-appearance:none;border:0px;margin:0px;padding:0px;background:none}
+.plain>.button-box {border:1px solid transparent;margin:0px;padding:0px;background:none}
+.plain:focus>.button-box {border:1px dotted ThreeDDarkShadow}
+dialog#subscribeOptions #readerContainer {}
+dialog#subscribeOptions #readers {border:none;margin:0px;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#subscribeOptions #readers>listitem {-moz-padding-start:4px}
+dialog#subscribeOptions #chooseClientApp {}
+dialog#subscribeOptions #application {border-bottom:1px solid ThreeDShadow}
+dialog#subscribeOptions #readerGroup {-moz-padding-end:14px}
+@media print {#feedHeaderContainer {display:none}
+}

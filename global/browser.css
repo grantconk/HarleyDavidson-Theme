@@ -1,0 +1,21 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+.tabbrowser-tabs {-moz-binding:url("chrome://global/skin/globalBindings.xml#tabbrowser-tabs")!important}
+.tabbrowser-tabs>.tabbrowser-tab {-moz-binding:url("chrome://global/skin/globalBindings.xml#tabbrowser-tab")!important}
+#browser tab.tabbrowser-tab {background:none transparent!important;padding:0px!important;-moz-border-radius-topleft:5px!important;-moz-border-radius-topright:5px!important}
+#browser tab.tabbrowser-tab:not([selected="true"]):hover {background:none transparent!important}
+#browser tab.tabbrowser-tab:not([selected="true"]):hover:active {background:none transparent!important}
+#browser tab.tabbrowser-tab[selected="true"] {background:none transparent!important}
+#browser tab.tabbrowser-tab .tab-image-left {width:5px;min-width:5px;min-height:24px;background:url("chrome://global/skin/tabbar/browsertab-leftedge-gradient-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab .tab-image-middle {min-height:24px;background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab toolbarbutton.tab-close-button {min-height:24px;background:url("chrome://global/skin/tabbar/browsertab-closebutton-gradient-bg.png") top left repeat-x transparent!important;margin-top:0px!important;margin-left:0px!important;margin-right:0px!important}
+#browser tab.tabbrowser-tab .tab-image-right {width:5px;min-width:5px;min-height:24px;background:url("chrome://global/skin/tabbar/browsertab-rightedge-gradient-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab:hover .tab-image-left {background:url("chrome://global/skin/tabbar/browsertab-leftedge-gradient-hover-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab:hover .tab-image-middle {background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-hover-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab:hover toolbarbutton.tab-close-button {background:url("chrome://global/skin/tabbar/browsertab-closebutton-gradient-hover-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab:hover .tab-image-right {background:url("chrome://global/skin/tabbar/browsertab-rightedge-gradient-hover-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab[selected="true"] .tab-image-left {background:url("chrome://global/skin/tabbar/browsertab-leftedge-gradient-selected-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab[selected="true"] .tab-image-middle {background:url("chrome://global/skin/tabbar/browsertab-middle-gradient-selected-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab[selected="true"] toolbarbutton.tab-close-button {background:url("chrome://global/skin/tabbar/browsertab-closebutton-gradient-selected-bg.png") top left repeat-x transparent!important}
+#browser tab.tabbrowser-tab[selected="true"] .tab-image-right {background:url("chrome://global/skin/tabbar/browsertab-rightedge-gradient-selected-bg.png") top left repeat-x transparent!important}
+.tab-drop-indicator-bar {display:none}
+.tab-drop-indicator-bar[dragging="true"] {-moz-margin-start:0px!important;display:-moz-box}

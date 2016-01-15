@@ -1,0 +1,4 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] #nav-bar .toolbarbutton-1,window[windowtype="navigator:browser"][theme="nasanightlaunch"] #nav-bar #back-forward-dropmarker {border-color:#111111!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] #nav-bar .toolbarbutton-1,window[windowtype="navigator:browser"][theme="harley_davidson"] #nav-bar #back-forward-dropmarker {border-color:#111111!important}
+/* --- end --- */

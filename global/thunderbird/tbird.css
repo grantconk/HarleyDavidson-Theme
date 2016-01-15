@@ -1,0 +1,114 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   mcdavis941@netscape.net
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url(http://www.w3.org/1999/xhtml);
+window#messengerWindow #mailContentWrapper {}
+window#messengerWindow #mail-bar {border-top:none;-moz-border-bottom-colors:none;border-bottom:1px solid black;border-left:none;border-right:none;background:url("chrome://global/skin/toolbar/inner-gradient-bg.100px.80pct.png") top left repeat-x transparent}
+window#messengerWindow #mailContent {}
+window#messengerWindow tree#folderTree {border:5px solid #1e1e1e;-moz-border-top-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-right-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-bottom-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-left-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black}
+window#messengerWindow .tree-bodybox {border:0}
+window#messengerWindow #folderColumnLabel{border-top:0;margin-top:0}
+window#messengerWindow #folderPaneHeader{border:none;margin-top:0;background-color:#181818}
+window#messengerWindow #messengerBox{border:5px solid #1e1e1e;-moz-border-top-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-right-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-bottom-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-left-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black}
+window#messengerWindow #messagepanebox{border:5px solid #1e1e1e;-moz-border-top-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-right-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-bottom-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black;-moz-border-left-colors:#1e1e1e #1e1e1e #1e1e1e #1e1e1e black}
+window#messengerWindow #folderpane_splitter,window#messengerWindow #gray_vertical_splitter,window#messengerWindow #threadpane-splitter{-moz-appearance:none;border-width:2px 1px 1px 2px;border-style:solid;border-color:black;-moz-border-left-colors:black #313131;-moz-border-top-colors:black #313131;min-width:6px;-moz-box-align:center;-moz-box-pack:center;cursor:ew-resize;background:url("chrome://global/skin/splitter/horz-bg.png") center center no-repeat #050505}
+window#messengerWindow #folderpane_splitter[orient="vertical"],window#messengerWindow #gray_vertical_splitter[orient="vertical"],window#messengerWindow #threadpane-splitter[orient="vertical"]{cursor:ns-resize;min-height:6px;background:url("chrome://global/skin/splitter/vert-bg.png") center center no-repeat #050505}
+window#messengerWindow #folderpane_splitter:hover,window#messengerWindow #folderpane_splitter:hover:active,window#messengerWindow #gray_vertical_splitter:hover,window#messengerWindow #gray_vertical_splitter:hover:active,window#messengerWindow #threadpane-splitter:hover,window#messengerWindow #threadpane-splitter:hover:active{-moz-border-left-colors:black #393939;-moz-border-top-colors:black #393939;background:url("chrome://global/skin/splitter/horz-hover-bg.png") center center no-repeat #555555}
+window#messengerWindow #folderpane_splitter[orient="vertical"]:hover,window#messengerWindow #folderpane_splitter[orient="vertical"]:hover:active,window#messengerWindow #gray_vertical_splitter[orient="vertical"]:hover,window#messengerWindow #gray_vertical_splitter[orient="vertical"]:hover:active,window#messengerWindow #threadpane-splitter[orient="vertical"]:hover,window#messengerWindow #threadpane-splitter[orient="vertical"]:hover:active{background:url("chrome://global/skin/splitter/vert-hover-bg.png") center center no-repeat #555555}
+window#messengerWindow #searchBox{border:none;margin-top:0;background-color:#181818}
+window#messengerWindow #accountCentralBox{border:0;border-top:3px solid #cccccc;-moz-border-top-colors:#c3c3c3 #d6d6d6 #dddddd}
+window#addressbookWindow hbox#CardViewOuterBox {border:0}
+caption.tab-caption {-moz-appearance:none}
+window#msgcomposeWindow toolbox {padding-bottom:5px}
+tree#abResultsTree {background-color:#b6b6b6}
+page#abContactsPanel {background-color:#b6b6b6}
+page#abContactsPanel treecol {background-color:#b6b6b6}
+#sidebar-box .ab-closebutton{list-style-image:url("chrome://global/skin/icons/close.png");margin-bottom:0px!important;padding:0px 2px 0px 2px!important;-moz-image-region:rect(0px,16px,16px,0px);border:0}
+#sidebar-box .ab-closebutton:hover{-moz-image-region:rect(0px,32px,16px,16px)}
+#sidebar-box .ab-closebutton:active {-moz-image-region:rect(0px,48px,16px,32px)}
+window#msgcomposeWindow vbox#appcontent {border:0}
+window#msgcomposeWindow editor#content-frame {border:0}
+window#msgcomposeWindow toolbox#headers-box {border-top:3px solid #cccccc;-moz-border-top-colors:#9b9b9b #a6a6a6 #b0b0b0}
+window#printEngineWin {}
+window#searchMailWindow vbox#searchTerms,window#searchAddressBookWindow vbox#searchTerms{padding:10px}
+window#searchMailWindow vbox#searchResultListBox,window#searchAddressBookWindow vbox#searchResultListBox{padding:10px;margin:0px}
+window#searchMailWindow vbox#searchResultListBox vbox#searchResultListBox,window#searchAddressBookWindow vbox#searchResultListBox vbox#searchResultListBox{padding:0px;margin:0px}
+window#searchMailWindow vbox#searchResultListBox>hbox,window#searchAddressBookWindow vbox#searchResultListBox>hbox{margin-top:5px;-moz-box-pack:center}
+window#searchMailWindow vbox#searchResultListBox>hbox>spacer,window#searchAddressBookWindow vbox#searchResultListBox>hbox>spacer{visibility:hidden}
+window#searchMailWindow button.small-button,window#searchAddressBookWindow button.small-button{list-style-image:none}
+window#searchMailWindow listbox#searchTermList,window#searchAddressBookWindow listbox#searchTermList{background-color:#b6b6b6;border:0;margin:5px 0 0 0}
+window#searchMailWindow tree#threadTree,window#searchAddressBookWindow tree#threadTree{background-color:#b6b6b6;border:2px solid #cccccc;-moz-border-top-colors:#cccccc #555555;-moz-border-right-colors:white #DFDFDF;-moz-border-bottom-colors:white #DFDFDF;-moz-border-left-colors:#cccccc #555555}
+dialog#subscribeWindow,dialog#msgCompSecurityInfo,dialog#msg-synchronizer,dialog#accountManager,dialog[windowtype="mailnews:junk"],dialog#CustomizeToolbarWindow,dialog#abcardDialog,dialog#FilterEditor,dialog#viewLogWindow,dialog#addDirectory,dialog#select-offline{padding:0}
+dialog#subscribeWindow .dialog-content-box,dialog#msgCompSecurityInfo .dialog-content-box,dialog#msg-synchronizer .dialog-content-box,dialog#accountManager .dialog-content-box,dialog[windowtype="mailnews:junk"] .dialog-content-box,dialog#CustomizeToolbarWindow .dialog-content-box,dialog#abcardDialog .dialog-content-box,dialog#FilterEditor .dialog-content-box,dialog#viewLogWindow .dialog-content-box,dialog#addDirectory .dialog-content-box,dialog#select-offline .dialog-content-box{margin:10px 10px 10px 10px}
+dialog#subscribeWindow .dialog-button-box,dialog#msgCompSecurityInfo .dialog-button-box,dialog#msg-synchronizer .dialog-button-box,dialog#accountManager .dialog-button-box,dialog[windowtype="mailnews:junk"] .dialog-button-box,dialog#CustomizeToolbarWindow .dialog-button-box,dialog#abcardDialog .dialog-button-box,dialog#FilterEditor .dialog-button-box,dialog#viewLogWindow .dialog-button-box,dialog#addDirectory .dialog-button-box,dialog#select-offline .dialog-button-box{margin:0px;padding:4px 5px 8px 5px;background-color:#070707}
+@-moz-document
+url(chrome://messenger/content/am-server-advanced.xul),url(chrome://messenger/content/addressbook/pref-editdirectories.xul),url(chrome://messenger/content/am-identities-list.xul),url(chrome://messenger/content/SmtpServerEdit.xul),url(chrome://messenger/content/am-identity-edit.xul){dialog{padding:0}
+dialog .dialog-content-box{margin:10px 10px 10px 10px}
+dialog .dialog-button-box{margin:0px;padding:4px 5px 8px 5px;background-color:#070707}
+}
+dialog#accountManager{width:60em!important}
+dialog#accountManager tree#accounttree {border:0px;background-color:#b6b6b6;margin:0px 0px 4px 0px}
+dialog#accountManager button#addAccountButton,dialog#accountManager button#setDefaultButton,dialog#accountManager button#removeButton{margin-left:0px;margin-right:0px}
+dialog#accountManager iframe#contentFrame{margin-left:10px}
+@-moz-document
+url(chrome://global/content/nsProgressDialog.xul){window.dialog[title="Saving"] {margin:0;border:0;padding:0}
+window.dialog[title="Saving"]>grid {margin:8px 10px 0px 10px;border:0;padding:0}
+window.dialog[title="Saving"]>hbox {margin:0px 10px 0px 10px;border:0;padding:0}
+window.dialog[title="Saving"]>separator {margin:0px 10px 0px 10px;border:0;padding:0}
+window.dialog[title="Saving"]>separator+hbox {margin:0;border:0;padding:9px 10px 8px 10px;background-color:#070707}
+}
+prefwindow#MailPreferences {height:42em!important;background-image:url("chrome://browser/skin/preferences/preferences.bg.3.png");background-position:left top;background-repeat:no-repeat;-moz-background-origin:padding!important}
+prefwindow#MailPreferences radiogroup.paneSelector radio{border:0}
+prefwindow#MailPreferences radiogroup.paneSelector radio[selected="true"]{background:url("chrome://browser/skin/preferences/selector-selected.png") no-repeat bottom center transparent !important;border:0}
+prefwindow#MailPreferences radiogroup.paneSelector radio:not([selected="true"]):hover{background:url("chrome://browser/skin/preferences/selector-hover.png") no-repeat bottom center transparent !important;border:0}
+/*prefwindow#MailPreferences radiogroup.paneSelector {background:url("chrome://global/skin/logos/nasa-logo.preferences-header.png") no-repeat top right transparent;margin-left:158px;margin-right:0px;padding-right:90px;padding-top:10px;min-height:70px}*/
+/* --- show HD logo --- */
+prefwindow#MailPreferences radiogroup.paneSelector {background:url("chrome://global/skin/logos/hd-logo.preferences-header.png") no-repeat top right transparent !important;margin-left:158px;margin-right:0px;padding-right:90px;padding-top:10px;min-height:70px}
+/* --- end --- */
+prefwindow#MailPreferences hbox.paneDeckContainer {margin-left:158px;margin-top:7px;margin-bottom:0px}
+prefwindow#MailPreferences prefpane {overflow:auto}
+dialog#subscribeWindow tree#subscribeTree,dialog#subscribeWindow tree#subscribeTree{border:0px;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#FilterEditor button.small-button {list-style-image:none}
+dialog#FilterEditor listbox#searchTermList,dialog#FilterEditor listbox#filterActionList{border:none}
+window#filterListDialog>hbox {margin-top:10px;margin-right:10px;margin-left:10px}
+window#filterListDialog>grid {margin-right:10px;margin-bottom:5px;margin-left:10px}
+window#filterListDialog tree#filterTree {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#viewLogWindow browser#logView {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+dialog#select-offline tree#synchronizeTree {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+window#DownloadActionsWindow tree#fileHandlersList{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}

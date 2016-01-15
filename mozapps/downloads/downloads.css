@@ -1,0 +1,46 @@
+#downloadManager {background:url("chrome://global/skin/default-window-gradient-bg.png") repeat-x top left #181818;padding:0px}
+#windowResizer {margin:0px 0px 0px 0px;background-image:url("chrome://global/skin/resizer/gripper8x8.png");height:8px;width:8px}
+#downloadManager #downloadView {-moz-appearance:none;border:1px solid black;padding:0px;margin:15px 15px 15px 15px;background:url("chrome://global/skin/richlistitem/richlist-gradient-bg.png") bottom right repeat-x #1e1e1e}
+.downloadViewInner {background-image:url("chrome://mozapps/skin/downloads/viewFader.png");padding:0px}
+#commandBar {padding:10px 15px 10px 10px;margin:0px -8px 0px 0px;background-color:#070707}
+#cleanUpButton,#clearListButton {margin:0px;list-style-image:url("chrome://mozapps/skin/downloads/downloadCleanup.png");-moz-image-region:rect( 0px 21px 21px 0px )}
+#clearListButton {-moz-margin-start:5px}
+#cleanUpButton .button-icon,#clearListButton .button-icon {margin-top:0px;margin-bottom:0px;-moz-margin-start:0px;-moz-margin-end:5px}
+#cleanUpButton[disabled="true"],#clearListButton[disabled="true"] {-moz-image-region:rect( 21px 21px 42px 0px )}
+#cleanUpButton:not([disabled="true"]):hover,#clearListButton:not([disabled="true"]):hover {-moz-image-region:rect( 42px 21px 63px 0px )}
+#cleanUpButton:not([disabled="true"]):hover:active,#clearListButton:not([disabled="true"]):hover:active {-moz-image-region:rect( 63px 21px 84px 0px )}
+#commandBarSeparator {-moz-margin-start:5px}
+download,richlistitem[type="download"] {color:#bbbbbb;padding:5px;min-height:20px;border:2px solid transparent;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:#000000 #070707;-moz-border-left-colors:none;background:url("chrome://global/skin/richlistitem/gradient-normal-bg.png") left center repeat-x #070707;-moz-background-origin:border}
+download+download,richlistitem[type="download"] {-moz-border-top-colors:#373737 #212121}
+download:hover,richlistitem[type="download"]:hover {color:#fdfdfd;background:url("chrome://global/skin/richlistitem/gradient-hover-bg.png") left center repeat-x #070707;-moz-background-origin:border}
+download+download:hover:not([selected="true"]),richlistitem[type="download"]:hover {-moz-border-top-colors:#373737 #323232}
+download[selected="true"],richlistitem[type="download"][selected="true"] {color:#fdfdfd;background:url("chrome://global/skin/richlistitem/gradient-hover-bg.png") left center repeat-x #070707;-moz-background-origin:border;border:2px solid #fdfdfd;-moz-border-top-colors:none;-moz-border-bottom-colors:none}
+.downloadContentBox {opacity:0.0}
+.downloadContentBox[animated="true"] {opacity:1.0}
+.downloadTypeIcon {-moz-margin-end:10px}
+#folderIcon {width:16px;height:16px}
+#folderName {width:0px}
+#saveToFolder {padding-top:1px;padding-bottom:3px;-moz-padding-start:5px;-moz-padding-end:6px}
+#saveToFolder .toolbarbutton-text {text-align:left;-moz-margin-start:5px!important}
+#active-downloads-title,#other-downloads-title {min-height:2.5em;color:#fdfdfd}
+.title-line {height:1px;background-color:#999999;-moz-margin-end:7px;-moz-margin-start:5px}
+richlistitem .downloadContentBox {opacity:1.0}
+progressmeter {height:11px;max-height:11px;margin-top:3px}
+.mini-button {list-style-image:url(chrome://mozapps/skin/downloads/buttons.png);background:none transparent;border:none;padding:0;margin:0;min-width:0;min-height:0}
+.mini-button>.button-box {padding:0!important;background:none transparent}
+.cancel {-moz-image-region:rect(0px,32px,16px,16px)}
+.info {-moz-image-region:rect(0px,16px,16px,0px)}
+.open {-moz-image-region:rect(16px,32px,32px,16px)}
+.pause {-moz-image-region:rect(32px,32px,48px,16px)}
+.resume {-moz-image-region:rect(16px,48px,32px,32px)}
+.retry {-moz-image-region:rect(0px,48px,16px,32px)}
+#information-uri {-moz-image-region:rect(16px,16px,32px,0px)}
+#information-location {-moz-image-region:rect(32px,16px,48px,0px)}
+.blockedIcon {list-style-image:url(chrome://global/skin/icons/Error.png)}
+.downloadTypeIcon {min-height:32px;min-width:32px}
+#search {margin-top:-5px;padding:10px 15px 10px 10px;background-color:#070707}
+#searchbox {-moz-margin-end:0px}
+#search #windowResizer {margin-bottom:-10px}
+#information>* {margin-left:5px;margin-right:5px}
+#information>button {margin-top:2px}
+#information .button-icon {margin-right:5px}

@@ -1,0 +1,6 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] vbox#sidebar-box {background:none transparent!important}
+window[windowtype="navigator:browser"][theme="nasanightlaunch"] vbox#sidebar-box sidebarheader {background:url("chrome://global/skin/subskins/lighter-sidebar/sidebarheader-gradient-bg.60pct.100px.png") top left repeat-x transparent!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] vbox#sidebar-box {background:none transparent!important}
+window[windowtype="navigator:browser"][theme="harley_davidson"] vbox#sidebar-box sidebarheader {background:url("chrome://global/skin/subskins/lighter-sidebar/sidebarheader-gradient-bg.60pct.100px.png") top left repeat-x transparent!important}
+/* --- end --- */

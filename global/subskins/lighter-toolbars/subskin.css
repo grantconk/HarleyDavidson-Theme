@@ -1,0 +1,4 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] toolbox#navigator-toolbox>toolbar:not([id="toolbar-menubar"]):not([id="nav-bar"]) {background-image:url("chrome://global/skin/subskins/lighter-toolbars/inner-gradient-bg.png")!important;background-position:top left!important;background-repeat:repeat-x!important;background-color:#1f1f1f!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox>toolbar:not([id="toolbar-menubar"]):not([id="nav-bar"]) {background-image:url("chrome://global/skin/subskins/lighter-toolbars/inner-gradient-bg.png")!important;background-position:top left!important;background-repeat:repeat-x!important;background-color:#1f1f1f!important}
+/* --- end --- */

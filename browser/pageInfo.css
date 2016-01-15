@@ -1,0 +1,117 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-2004
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   Kevin Gerich (webmail@kmgerich.com)
+ *   Daniel Brooks <db48x@yahoo.com>
+ *   Florian QUEZE <f.qu@queze.net>
+ *   mcdavis941 (mcdavis941@netscape.net)
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ * ***** END LICENSE BLOCK ***** */
+
+@import "chrome://global/skin/";
+window{margin:0;border:0;padding:0px;background:url("chrome://global/skin/window-gradient-bg.top-cropped.png") repeat-x top left #181818}
+@-moz-document url(chrome://browser/content/pageInfo.xul) {window{padding:10px}
+}
+tabbox#tabbox{margin:0px;padding:0px}
+tabpanels {margin:0}
+tree {margin:.5em;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+tree#formtree {background:none #b6b6b6}
+textbox,textbox>.textbox-internal-box,textbox>.textarea-internal-box {background:transparent!important;border:none;padding:0px;-moz-appearance:none}
+textbox.header {-moz-margin-start:0}
+.iframe {margin:.5em;background:#b6b6b6;overflow:auto;border:1px solid black}
+#thepreviewimage {margin:1em}
+.fixedsize {height:8.5em}
+textbox[disabled] {font-style:italic}
+@-moz-document url(chrome://browser/content/pageinfo/pageInfo.xul){#viewGroup radio {list-style-image:url("chrome://browser/skin/pageInfo.png");
+-moz-box-orient:vertical;-moz-box-align:center;-moz-appearance:none;padding:5px 3px 1px 3px}
+.viewSelector {border:none;margin:0;-moz-padding-start:10px;background-color:-moz-Field;color:-moz-FieldText}
+#generalTab {-moz-image-region:rect(0px,32px,32px,0px)}
+#generalTab:hover,#generalTab[selected="true"] {-moz-image-region:rect(32px,32px,64px,0px)}
+#mediaTab {-moz-image-region:rect(0px,64px,32px,32px)}
+#mediaTab:hover,#mediaTab[selected="true"] {-moz-image-region:rect(32px,64px,64px,32px)}
+#feedTab {-moz-image-region:rect(0px,96px,32px,64px)}
+#feedTab:hover,#feedTab[selected="true"] {-moz-image-region:rect(32px,96px,64px,64px)}
+#permTab {-moz-image-region:rect(0px,128px,32px,96px)}
+#permTab:hover,#permTab[selected="true"] {-moz-image-region:rect(32px,128px,64px,96px)}
+#securityTab {-moz-image-region:rect(0px,160px,32px,128px)}
+#securityTab:hover,#securityTab[selected="true"] {-moz-image-region:rect(32px,160px,64px,128px)}
+deck {padding:10px 10px 10px 10px}
+tree {margin:.5em}
+.gridSeparator {width:.5em}
+textbox {background:transparent!important;border:none;padding:0px;margin-top:1px;-moz-appearance:none}
+textbox.header {-moz-margin-start:0}
+.iframe {margin:.5em;overflow:auto}
+.fixedsize {height:8.5em}
+textbox[disabled] {font-style:italic}
+#titletext {color:#f0f0f0;margin-bottom:8px}
+#titletext {margin-left:9px}
+#titletext+grid {margin-left:7px}
+#titletext+grid row+row+row+row+row+row+row {display:none}
+#titletext+grid row+row+row+row+row+row+row+row {display:-moz-grid-line}
+groupbox.collapsable caption .caption-icon {width:9px;height:9px;background-repeat:no-repeat;background-position:center;-moz-margin-start:1px;-moz-margin-end:3px;background-image:url("chrome://global/skin/tree/twisty-open.png")}
+groupbox.collapsable[closed="true"] {border:none}
+groupbox.collapsable[closed="true"] caption .caption-icon {background-image:url("chrome://global/skin/tree/twisty-clsd.png")}
+groupbox tree {margin:0;border:none}
+groupbox.treebox .groupbox-body {padding-top:0}
+#securityBox description {-moz-margin-start:10px}
+#general-security-identity {white-space:-moz-pre-wrap;line-height:2em}
+#imagetree {min-height:10em}
+treechildren::-moz-tree-cell-text(broken) {font-style:italic;color:#333333}
+#mediaPreviewBox {padding-top:5px}
+#thepreviewimage {margin:1em}
+#blockImage {margin-top:10px;margin-bottom:10px}
+#feedtree {margin-bottom:0px}
+#feedListbox richlistitem {padding-top:6px;padding-bottom:6px;-moz-padding-start:7px;-moz-padding-end:7px;min-height:25px}
+#feedListbox {border:1px solid black}
+#feedListbox textbox {color:inherit}
+.feedTitle {font-weight:bold}
+#permList {margin-top:.5em;overflow:auto;border:1px solid black;background:url("chrome://global/skin/richlistitem/richlist-gradient-bg.png") bottom right repeat-x #1e1e1e;overflow:auto}
+#permList>vbox {padding-top:6px;padding-bottom:6px;-moz-padding-start:7px;-moz-padding-end:7px;min-height:25px}
+#permList>vbox>label {font-weight:bold}
+#permList>vbox {color:#bbbbbb;border:2px solid transparent;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:#000000 #070707;-moz-border-left-colors:none;background:url("chrome://global/skin/richlistitem/gradient-normal-bg.png") left center repeat-x #070707;-moz-background-origin:border}
+#permList>vbox+vbox {-moz-border-top-colors:#373737 #212121}
+#permList>vbox:hover {color:#fdfdfd;background:url("chrome://global/skin/richlistitem/gradient-hover-bg.png") left center repeat-x #070707;-moz-background-origin:border}
+#permList>vbox+vbox:hover:not([selected="true"]) {-moz-border-top-colors:#373737 #323232}
+#permList>vbox[selected="true"] {color:#fdfdfd;background:url("chrome://global/skin/richlistitem/gradient-hover-bg.png") left center repeat-x #070707;-moz-background-origin:border;border:2px solid #fdfdfd;-moz-border-top-colors:none;-moz-border-bottom-colors:none}
+#securityPanel .caption-icon {display:none}
+#securityPanel .header {font-size:120%}
+#securityPanel .fieldLabel {margin:2px 10px 3px 10px}
+#securityPanel .fieldValue {font-weight:bold;margin:2px 10px 0px 10px}
+/*.viewSelector {margin:0px;margin-left:10px;-moz-padding-start:0px;color:#f9f9f9;background:url("chrome://global/skin/logos/nasa-logo.extensions-header.bonecho.png") no-repeat top right transparent;padding-right:90px;padding-top:10px;padding-left:0px;padding-bottom:0px;min-height:70px}*/
+/* --- Use HD logo --- */
+.viewSelector {margin:0px;margin-left:10px;-moz-padding-start:0px;color:#f9f9f9;background:url("chrome://global/skin/logos/hd-logo.extensions-header.b.png") no-repeat top right transparent;padding-right:90px;padding-top:10px;padding-left:0px;padding-bottom:0px;min-height:70px}
+/* --- end --- */
+#viewGroup radio {-moz-appearance:none;margin:0px 1px 0px 1px;padding:1px 3px 1px 3px;min-width:4.5em;background-color:transparent}
+#viewGroup radio:hover {background:url("chrome://mozapps/skin/extensions/selector-hover.png") no-repeat bottom center transparent;color:#f9f9f9}
+#viewGroup radio[selected="true"] {background:url("chrome://mozapps/skin/extensions/selector-selected.png") no-repeat bottom center transparent;color:#f9f9f9}
+.viewButtonIcon {width:32px;height:32px}
+}

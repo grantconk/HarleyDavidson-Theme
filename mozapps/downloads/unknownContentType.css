@@ -1,0 +1,13 @@
+#from {margin-top:1px}
+#location {font-weight:bold;color:white}
+#contentTypeImage {margin-top:1px;margin-bottom:1px;-moz-margin-start:1px;-moz-margin-end:5px;background:url("chrome://mozapps/skin/downloads/unknownContentTypeImage.item.png") center center no-repeat transparent;min-height:0px}
+.small-indent {margin-left:15px;margin-right:15px}
+dialog#unknownContentType {margin:0;border:0;padding:0}
+.dialog-content-box {margin:0;border:0;padding:10px}
+vbox#container>hbox.small-indent {margin:0px 5px 0px 5px;padding:2px 3px 2px 3px;border:1px solid black;background:url("chrome://global/skin/backgrounds/unknownContentType-bg.alt2.png") center right no-repeat black}
+vbox#container>hbox.small-indent label{color:white}
+vbox#container>hbox.small-indent description{color:white}
+textbox#type[readonly="true"] {background-color:transparent;background-image:none;color:white}
+label#whichIsA {-moz-margin-start:12px}
+label#from {-moz-margin-start:12px}
+.dialog-button-box {margin:0;border:0;padding:0px 10px 4px 5px;background-color:#070707}

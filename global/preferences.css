@@ -1,0 +1,56 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: NPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Netscape Public License
+ * Version 1.1 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/NPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is the Preferences UI System.
+ *
+ * The Initial Developer of the Original Code is Ben Goodger.
+ * Portions created by the Initial Developer are Copyright (C) 2005
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *  Ben Goodger <ben@mozilla.org>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the NPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the NPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+prefwindow {-moz-appearance:none;margin:0px;padding:0px 0px 0px 0px;background:url("chrome://global/skin/window-gradient-bg.top-cropped.png") top left repeat-x #181818}
+prefwindow[type="child"] {background:url("chrome://global/skin/window-gradient-bg.top-cropped.short.png") repeat-x top left #181818}
+.paneDeckContainer {margin:10px 10px 10px 10px}
+prefpane {-moz-appearance:none;background:none transparent;border:none;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none}
+prefwindow[type="child"]>prefpane {}
+prefwindow#FontsDialog prefpane,prefwindow#ConnectionsDialog prefpane{-moz-appearance:none;background:url("chrome://browser/skin/preferences/prefpanel-bg.png") top left repeat-x #0d0d0d;border:2px solid black;-moz-border-top-colors:black #292929;-moz-border-right-colors:black #202020;-moz-border-bottom-colors:black #070707;-moz-border-left-colors:black #222222;border-bottom:1px solid black}
+.prefWindow-dlgbuttons {background-color:#070707;margin:0 0px 0px 0px;padding:9px 5px 8px 5px;border:0px;border-top:10px solid #181818;border-top:none;margin-top:10px}
+prefwindow[type="child"] .prefWindow-dlgbuttons {}
+prefpane>.content-box>groupbox {margin:0}
+groupbox {margin:0px!important}
+radio[pane] {-moz-appearance:none;margin:0px 1px 0px 1px;padding:0px 3px 1px 3px;min-width:4.5em}
+.paneSelector {color:#fdfdfd;min-height:70px;border:none;background:url("chrome://global/skin/logos/no-logo.preferences-header.png") no-repeat bottom right transparent !important;margin:0px 0px 0px 10px;padding:10px 10px 0px 10px}
+.paneButtonIcon {width:32px;height:32px}
+radiogroup.paneSelector radio[selected="true"] {background:url("chrome://browser/skin/preferences/selector-selected.png") no-repeat bottom center transparent !important}
+radiogroup.paneSelector radio:not([selected="true"]):hover {background:url("chrome://browser/skin/preferences/selector-hover.png") no-repeat bottom center transparent !important}
+tabpanels {-moz-appearance:none!important;background-color:#f9f9f9!important}
+/* --- fix extensions from changing things on us, like Foxmarks --- */
+.paneButtonLabel {color:#FFFFFF !important}
+/* --- end --- */

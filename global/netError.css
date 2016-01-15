@@ -1,0 +1,27 @@
+@import url("chrome://global/skin/button.onlight.css");
+html {background:none #181818}
+body {margin:auto;padding:0 1em;color:black;font-family:arial,message-box;font-size:8pt}
+h1 {margin:0 0 .6em 0;border-bottom:1px solid #cccccc;font-size:160%;padding:0 0 0.35em 0}
+ul,ol {margin:0;-moz-margin-start:1.5em;padding:0}
+ul>li,ol>li {margin-bottom:.25em;font-size:8pt}
+ul {list-style:square}
+#errorPageContainer {position:relative;min-width:13em;max-width:52em;margin:4em auto;border-top:1px solid #cccccc;border-right:0px;border-bottom:1px solid #cccccc;border-left:0px;border:0;-moz-border-radius:0px;padding:3em 2em;-moz-padding-start:0px;background:url("chrome://global/skin/icons/warning-neterror-large.png") left 0 no-repeat #eeeeee;-moz-background-origin:content;border:10px solid white;-moz-border-radius:3px;-moz-background-clip:padding}
+body[dir="rtl"] #errorPageContainer {background-position:right 0}
+#errorTitle {-moz-margin-start:70px;color:#b47331}
+#errorLongContent {-moz-margin-start:70px;border-bottom:1px solid #cccccc;padding:0 0 3em 0}
+#errorShortDesc>p {overflow:auto;border:none;padding-top:1em;padding-bottom:1em;font-weight:bold;white-space:-moz-pre-wrap}
+#errorLongDesc {-moz-padding-end:3em}
+#errorLongDesc>p {}
+#errorTryAgain {margin-top:2em;-moz-margin-start:70px}
+#brand {position:absolute;right:0;bottom:-1.5em;-moz-margin-end:10px;opacity:.4}
+body[dir="rtl"] #brand {right:auto;left:0}
+#brand>p {margin:0}
+#errorContainer {display:none}
+html.blacklist #errorTitle,html.blacklist #errorLongContent,html.blacklist #errorShortDesc,html.blacklist #errorLongDesc {background-color:#722;color:white}
+html.blacklist #errorPageContainer {background-image:url("chrome://global/skin/icons/blacklist_large.png");background-color:#722;background-position:13px -10px;border:8px solid #dddddd}
+html.blacklist {background:#333}
+html.blacklist #errorTryAgain {display:none}
+html.blacklist a {color:white}
+#getMeOutButton {-moz-margin-start:0px}
+#ignoreWarning #ignoreWarningButton {margin-right:17px;background:none;border:none;color:white}
+#ignoreWarningButton .button-box {background:none;border:none}

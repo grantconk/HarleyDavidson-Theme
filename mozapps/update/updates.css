@@ -1,0 +1,33 @@
+.wizard-button[dlgtype="finish"] {font-weight:bold}
+link {color:#b49351;border:1px solid transparent;margin-top:1px;margin-bottom:4px;-moz-margin-start:5px;-moz-margin-end:5px;text-decoration:underline!important}
+link>label {margin:0px;padding:1px;text-decoration:underline!important}
+link:hover,link:hover:active {color:#d9a371}
+link:focus {border:1px dotted black}
+license {margin-top:1px;margin-bottom:2px;-moz-margin-start:6px;-moz-margin-end:5px;-moz-appearance:listbox;padding-bottom:1px}
+.loadingBox {padding:3px 5px 3px 5px}
+.licenseLoadingThrobber {margin-top:3px}
+.licenseLoadingThrobber[state="loading"] {list-style-image:url("chrome://global/skin/throbber/Throbber-small.gif")}
+.licenseLoadingThrobber[state="error"] {list-style-image:url("chrome://global/skin/icons/notfound.png")}
+#moreDetails {margin:1px 5px 4px 3px}
+wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"] {font-weight:bold}
+wizard[currentpageid="updatesfound"] .wizard-button[dlgtype="next"]>.button-box {padding-left:15px;padding-right:15px}
+#updateForMoreInfo {margin-left:5px}
+#updateName,#updateFinishedName {font-weight:bold;font-size:larger}
+#alertImage {list-style-image:url("chrome://global/skin/icons/Warning.png");margin-right:5px}
+#incompatibleWarning {background:url("chrome://global/skin/backgrounds/incompatiblewarning-bg.png") left center no-repeat #413a37;color:black;border:none;padding:3px;margin:1px 5px 4px 5px}
+#downloadName {margin-top:3px}
+#downloadStatus {margin-top:6px;height:3em!important}
+#downloadThrobber {margin:5px 3px 0px 5px;list-style-image:url("chrome://global/skin/throbber/Throbber-small.png")}
+#downloadThrobber[state="loading"] {list-style-image:url("chrome://global/skin/throbber/Throbber-small.gif")}
+#downloadStatusLine {-moz-box-align:start}
+#verificationFailedIcon {list-style-image:url("chrome://global/skin/icons/notfound.png");margin:5px 3px 0px 5px}
+#errorReason {margin-top:1px;margin-bottom:2px;-moz-margin-start:6px!important;-moz-margin-end:5px;font-weight:bold}
+update {padding-top:5px;padding-bottom:3px;border-bottom:1px dotted #666666}
+update+update {padding-top:3px}
+.update-name {font-weight:bold;color:black}
+.update-label-column {-moz-box-align:end}
+.update-details-link {margin:0px}
+.update-type {font-weight:bold;color:#b49351}
+#historyItems {-moz-appearance:none;background:url("chrome://global/skin/backgrounds/updatehistory-list-bg.png") right center no-repeat #fffef9;padding:0px;height:200px;margin:1px 5px 5px 5px;color:#333333}
+.updatePrefsInfo {font-size:smaller;margin-left:27px;margin-bottom:10px}
+dialog#incompatible #incompatibleItems {background:url("chrome://global/skin/backgrounds/updatehistory-list-bg.png") right center no-repeat #fffef9}

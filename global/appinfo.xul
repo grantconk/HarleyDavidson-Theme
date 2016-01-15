@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="testWindow" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <!-- your code here -->
+<script type="application/x-javascript">
+<![CDATA[
+    // your code here
+    // alert( window.navigator.userAgent );
+    var myWindow = document.getElementById("testWindow");
+    myWindow.setAttribute("appVersion", window.navigator.userAgent);
+
+       var ai = Components.classes["@mozilla.org/xre/app-info;1"]
+                           .getService(Components.interfaces.nsIXULAppInfo);
+
+        var vc = Components.classes["@mozilla.org/xpcom/version-comparator;1"]
+                   .getService(Components.interfaces.nsIVersionComparator);
+
+      alert('appBuildID:' + ai.appBuildID + ':' + 'name :' + ai.name + ':' + 'platformBuildID :' + ai.platformBuildID + ':' + 'platformVersion :' + ai.platformVersion + ':' + 'vendor :' + ai.vendor + ':' + 'version :' + ai.version );
+
+]]>
+</script>
+
+</window>

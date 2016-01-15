@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<bindings id="windowBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="theme">
+    <content themer="mozilla@caffeinated.org" theme="harley_davidson" subskin=""/>
+  </binding>
+
+  <!-- for unified titlebar with mac (re http://iamthewalr.us/blog/2007/10/30/unified-toolbar-for-firefox/) -->
+  <!-- included as example, merged with the above
+  <binding id="unified">
+    <content titlebarcolor="orange">
+      <children/>
+    </content>
+  </binding>
+  -->
+
+</bindings>

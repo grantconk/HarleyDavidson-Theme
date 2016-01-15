@@ -1,0 +1,125 @@
+/*prefwindow#BrowserPreferences {width:57em!important;height:45em!important;padding:0px;background-image:url("chrome://browser/skin/preferences/preferences.bg.15.png");background-position:left top;background-repeat:no-repeat;-moz-background-origin:padding!important}*/
+/* --- Show my hog --- */
+prefwindow#BrowserPreferences {width:57em!important;height:45em!important;padding:0px;background-image:url("chrome://browser/skin/preferences/preferences.bg.hd.png");background-position:left top;background-repeat:no-repeat;-moz-background-origin:padding!important}
+/* --- end --- */
+#pref-pane-selector-bg-box {background:url("chrome://browser/skin/preferences/preferences.selector.line.png") bottom center repeat-x transparent}
+hbox.paneDeckContainer {margin-left:10px;margin-top:7px;margin-bottom:0px}
+/*prefwindow#BrowserPreferences radiogroup.paneSelector{background:url("chrome://global/skin/logos/nasa-logo.preferences-header.png") no-repeat top right transparent;margin:0px 0px 0px 158px;padding:10px 90px 0px 10px}*/
+/* --- show HD logo --- */
+prefwindow#BrowserPreferences radiogroup.paneSelector{background:url("chrome://global/skin/logos/hd-logo.preferences-header.png") no-repeat top right transparent !important;margin:0px 0px 0px 158px;padding:10px 90px 0px 10px}
+/* --- end --- */
+prefwindow#BrowserPreferences hbox.paneDeckContainer{margin-left:158px}
+prefwindow:not([type="child"]) prefpane {-moz-appearance:none;background:url("chrome://browser/skin/preferences/prefpanel-bg.png") top left repeat-x #0d0d0d;border:2px solid black;-moz-border-top-colors:black #292929;-moz-border-right-colors:black #202020;-moz-border-bottom-colors:black #070707;-moz-border-left-colors:black #222222;border-bottom:1px solid black}
+prefwindow#BrowserPreferences prefpane tabbox {margin-left:4px;margin-right:4px}
+prefwindow#BrowserPreferences .prefWindow-dlgbuttons {border-top:10px solid #181818;margin-top:0px}
+#BrowserPreferences radio[pane] {list-style-image:url("chrome://browser/skin/preferences/Options.png")}
+#BrowserPreferences radiogroup.paneSelector radio[selected="true"] {background:url("chrome://browser/skin/preferences/selector-selected.png") no-repeat bottom center transparent !important}
+#BrowserPreferences radiogroup.paneSelector radio:not([selected="true"]):hover {background:url("chrome://browser/skin/preferences/selector-hover.png") no-repeat bottom center transparent !important}
+radio[pane=paneGeneral] {-moz-image-region:rect(0px,32px,32px,0px)}
+radio[pane=paneGeneral]:hover,radio[pane=paneGeneral][selected="true"] {-moz-image-region:rect(32px,32px,64px,0px)}
+radio[pane=panePrivacy] {-moz-image-region:rect(0px,64px,32px,32px)}
+radio[pane=panePrivacy]:hover,radio[pane=panePrivacy][selected="true"] {-moz-image-region:rect(32px,64px,64px,32px)}
+radio[pane=paneContent] {-moz-image-region:rect(0px,96px,32px,64px)}
+radio[pane=paneContent]:hover,radio[pane=paneContent][selected="true"] {-moz-image-region:rect(32px,96px,64px,64px)}
+radio[pane=paneDownloads] {-moz-image-region:rect(0px,128px,32px,96px)}
+radio[pane=paneDownloads]:hover,radio[pane=paneDownloads][selected="true"] {-moz-image-region:rect(32px,128px,64px,96px)}
+radio[pane=paneTabs] {-moz-image-region:rect(0px,192px,32px,160px)}
+radio[pane=paneTabs]:hover,radio[pane=paneTabs][selected="true"] {-moz-image-region:rect(32px,192px,64px,160px)}
+radio[pane=paneAdvanced] {-moz-image-region:rect(0px,160px,32px,128px)}
+radio[pane=paneAdvanced]:hover,radio[pane=paneAdvanced][selected="true"] {-moz-image-region:rect(32px,160px,64px,128px)}
+#browserStartupHomepage {padding-top:2px;padding-bottom:3px;-moz-padding-start:4px;-moz-padding-end:2px;background-color:#b6b6b6}
+filefield {-moz-appearance:none;margin:1px 4px 2px 4px;border:2px solid black;-moz-border-top-colors:#070707 #141414;-moz-border-right-colors:#070707 #141414;-moz-border-bottom-colors:#070707 #141414;-moz-border-left-colors:#070707 #141414;padding:0px;background:url("chrome://global/skin/textbox/textbox-gradient-bg.alt5.png") top left repeat-x transparent}
+.fileFieldContentBox {background-color:transparent;background-image:none;color:inherit;margin:0px}
+filefield[disabled="true"] {background:none transparent}
+filefield[disabled="true"] .fileFieldContentBox {-moz-opacity:1.0;color:#444444}
+filefield[disabled="true"] .fileFieldIcon {-moz-opacity:0.2}
+.fileFieldIcon {width:16px;height:16px;margin-top:2px;margin-bottom:2px;-moz-margin-start:2px;-moz-margin-end:4px}
+.fileFieldLabel {-moz-appearance:none;background-color:transparent;background-image:none;border:none;padding:0px 0px 0px 0px;margin:0px}
+prefwindow prefpane tabbox caption { background-color:#343434; }
+prefwindow #accessibilityGroup caption { background-color:#343434; }
+prefwindow #browsingGroup caption { background-color:#2e2e2e; }
+prefwindow #languagesGroup caption { background-color:#181818; }
+prefwindow #connectionGroup caption { background-color:#343434; }
+prefwindow #cacheGroup caption { background-color:#323232; }
+prefwindow #protocolsGroup caption { background-color:#343434; }
+prefwindow #certificatesGroup caption { background-color:#323232; }
+prefwindow #systemDefaultsGroup caption { background-color:#181818; }
+prefpane#paneTabs .content-box,prefpane#paneApplications .content-box,prefpane#paneFeeds .content-box {padding-top:5px}
+.windowDialog,.windowDialog prefpane {padding:0px}
+.contentPane {margin:9px 8px 5px 8px}
+.actionButtons {margin:0px 3px 6px 3px}
+/*#cookiesChildren::-moz-tree-image(domainCol) {width:16px;height:16px;margin:0px 2px;list-style-image:url("chrome://global/skin/icons/folder-item.png")!important;-moz-image-region:rect(0px,16px,16px,0px)}*/
+/* --- Use HD logo for folder icon --- */
+#cookiesChildren::-moz-tree-image(domainCol) {width:16px;height:16px;margin:0px 2px;list-style-image:url("chrome://global/skin/icons/folder-item.hd.png")!important;-moz-image-region:rect(0px,16px,16px,0px)}
+/* --- end --- */
+#cookiesChildren::-moz-tree-image(domainCol,container) {-moz-image-region:rect(0px,32px,16px,16px)}
+#cookiesChildren::-moz-tree-image(domainCol,container,open) {-moz-image-region:rect(16px,32px,32px,16px)}
+#backgroundBox {background-color:#FFFFFF;opacity:0.5}
+#fileExtension {width:5em}
+#extensionChildren::-moz-tree-image(fileExtension) {margin:0px 5px 0px 0px}
+#typeField {font-weight:bold}
+#typeIcon {width:32px;height:32px;-moz-margin-end:3px}
+#typeField {background-color:transparent;margin-top:1px!important;margin-bottom:2px!important;-moz-margin-start:6px!important;-moz-margin-end:5px!important}
+#extensionField {color:#999999;font-weight:bold}
+#ChangeActionDialog {padding:0px}
+#ChangeActionDialog .dialog-button-box {padding-top:8px;padding-bottom:10px;-moz-padding-start:8px;-moz-padding-end:10px}
+#changeActionHeader {border:1px solid black;margin:0px;padding:10px;background:url("chrome://global/skin/backgrounds/changeaction-header-bg.alt1.png") center right no-repeat black;color:#cccccc}
+#changeActionHeader label#typeField {color:white}
+#changeActionHeader label#extensionField {color:#cccccc;font-weight:bold}
+#changeActionContent {padding-top:8px;padding-bottom:10px;-moz-padding-start:9px;-moz-padding-end:10px}
+#defaultAppIcon {width:16px;height:16px;-moz-margin-start:2px}
+#defaultAppName {-moz-margin-start:6px!important;font-weight:bold}
+tabpanels {-moz-appearance:none!important}
+window#DownloadActionsWindow tree#fileHandlersList{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+window#DownloadActionsWindow resizer {height:8px;width:8px;background-image:url("chrome://global/skin/resizer/gripper8x8.ongray.png")}
+window#DownloadActionsWindow hbox.actionButtons {-moz-margin-end:0px}
+window#PermissionsDialog tree#permissionsTree{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+window#PermissionsDialog resizer {height:8px;width:8px;background-image:url("chrome://global/skin/resizer/gripper8x8.ongray.png")}
+window#PermissionsDialog hbox.actionButtons {margin-right:0px}
+window#CookiesDialog>vbox.contentPane>label#cookiesIntro{margin-left:0}
+window#CookiesDialog tree#cookiesList{background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6;margin:0}
+window#CookiesDialog vbox.contentPane{margin:0;padding:10px 10px 10px 10px;border:0}
+#cookieInfoBox {border:1px solid black;-moz-border-radius:0px;margin:4px;padding:0px;background-color:#dddddd}
+window#CookiesDialog hbox#cookieInfoBox{margin:8px 0 0 0;padding:0;border:1px solid black}
+window#CookiesDialog hbox#cookieInfoBox label{color:black}
+window#CookiesDialog hbox#cookieInfoBox textbox{color:#333333;background-image:none;background-color:transparent}
+window#CookiesDialog resizer {height:8px;width:8px;background-image:url("chrome://global/skin/resizer/gripper8x8.ongray.png")}
+window#CookiesDialog hbox.actionButtons {-moz-margin-end:0px}
+window#CookiesDialog hbox.actionButtons button[icon="close"] {-moz-margin-end:2px}
+radio[pane=paneMain] {-moz-image-region:rect(0px,32px,32px,0px)}
+radio[pane=paneMain]:hover,radio[pane=paneMain][selected="true"] {-moz-image-region:rect(32px,32px,64px,0px)}
+radio[pane=paneFeeds] {-moz-image-region:rect(0px,224px,32px,192px)}
+radio[pane=paneFeeds]:hover,radio[pane=paneFeeds][selected="true"] {-moz-image-region:rect(32px,224px,64px,192px)}
+radio[pane=paneSecurity] {-moz-image-region:rect(0px,256px,32px,224px)}
+radio[pane=paneSecurity]:hover,radio[pane=paneSecurity][selected="true"] {-moz-image-region:rect(32px,256px,64px,224px)}
+button#chooseClientApp{margin-right:20px!important}
+button#chooseClientApp:not([disabled="true"]) {color:#bbbbbb}
+tabpanels {background:url("chrome://browser/skin/preferences/prefpanel-tabpanel-bg.test2.png") top left no-repeat #181818}
+radio[pane=paneMain] {-moz-image-region:rect(0px,32px,32px,0px)}
+radio[pane=paneMain]:hover,radio[pane=paneMain][selected="true"] {-moz-image-region:rect(32px,32px,64px,0px)}
+radio[pane=paneTabs] {-moz-image-region:rect(0px,64px,32px,32px)}
+radio[pane=paneTabs]:hover,radio[pane=paneTabs][selected="true"] {-moz-image-region:rect(32px,64px,64px,32px)}
+radio[pane=paneContent] {-moz-image-region:rect(0px,96px,32px,64px)}
+radio[pane=paneContent]:hover,radio[pane=paneContent][selected="true"] {-moz-image-region:rect(32px,96px,64px,64px)}
+radio[pane=paneFeeds] {-moz-image-region:rect(0px,128px,32px,96px)}
+radio[pane=paneFeeds]:hover,radio[pane=paneFeeds][selected="true"] {-moz-image-region:rect(32px,128px,64px,96px)}
+radio[pane=panePrivacy] {-moz-image-region:rect(0px,160px,32px,128px)}
+radio[pane=panePrivacy]:hover,radio[pane=panePrivacy][selected="true"] {-moz-image-region:rect(32px,160px,64px,128px)}
+radio[pane=paneSecurity] {-moz-image-region:rect(0px,192px,32px,160px)}
+radio[pane=paneSecurity]:hover,radio[pane=paneSecurity][selected="true"] {-moz-image-region:rect(32px,192px,64px,160px)}
+radio[pane=paneAdvanced] {-moz-image-region:rect(0px,224px,32px,192px)}
+radio[pane=paneAdvanced]:hover,radio[pane=paneAdvanced][selected="true"] {-moz-image-region:rect(32px,224px,64px,192px)}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] {background:none #222222}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] listboxbody {background:none transparent}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] listitem {color:#333333}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] listitem[selected="true"] {background-color:transparent}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] listitem[current="true"] {border:1px dotted #444444}
+prefwindow#BrowserPreferences listbox#readers[disabled="true"] .listcell-icon {opacity:0.3}
+radio[pane=paneApplications] {-moz-image-region:rect(0px,256px,32px,224px)}
+radio[pane=paneApplications]:hover,radio[pane=paneApplications][selected="true"] {-moz-image-region:rect(32px,256px,64px,224px)}
+#handlersView {margin:0px -1px 0px -1px}
+#BrowserPreferences[animated="true"] #handlersView {height:25em}
+#BrowserPreferences[animated="false"] #handlersView {-moz-box-flex:1}
+#advancedPrefs {margin-bottom:8px}
+#BrowserPreferences prefpane {border:2px solid black;border-bottom:0px solid black;-moz-border-top-colors:black #292929;-moz-border-right-colors:black #202020;-moz-border-bottom-colors:none;-moz-border-left-colors:black #222222}
+#BrowserPreferences .paneDeckContainer {border:0px solid black;border-bottom:1px solid black;-moz-border-bottom-colors:black}

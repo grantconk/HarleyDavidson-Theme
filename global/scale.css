@@ -1,0 +1,16 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+scale {-moz-appearance:none}
+.scale-slider {-moz-appearance:scale-horizontal;-moz-appearance:none;background:url("chrome://global/skin/scale/scale-tray-horiz.gif") 0% 50% repeat-x;margin:2px 4px;width:100px}
+.scale-slider[orient="vertical"]{-moz-appearance:scale-vertical;-moz-appearance:none;background:url("chrome://global/skin/scale/scale-tray-vert.gif") 50% 0% repeat-y;margin:4px 2px;width:auto;height:100px}
+.scale-slider[disabled="true"]{background-image:url("chrome://global/skin/scale/scale-tray-horz-dis.png")}
+.scale-slider[orient="vertical"][disabled="true"]{background-image:url("chrome://global/skin/scale/scale-tray-vert-dis.png")}
+.scale-slider:not([disabled="true"]) {-moz-user-focus:true}
+.scale-slider:focus {outline:1px dotted #cccccc}
+.scale-thumb {-moz-appearance:scalethumb-horizontal;-moz-appearance:none;border:2px solid;-moz-border-top-colors:#afafaf #bbbbbb;-moz-border-right-colors:#707070 #aaaaaa;-moz-border-bottom-colors:#707070 #aaaaaa;-moz-border-left-colors:#afafaf #bbbbbb;background:url("chrome://global/skin/scale/scale-thumb-gripper-horz.png") center center no-repeat #333333;min-width:15px;min-height:30px;-moz-border-radius:1px}
+.scale-thumb[orient="vertical"] {-moz-appearance:scalethumb-vertical;-moz-appearance:none;background:url("chrome://global/skin/scale/scale-thumb-gripper-vert.png") center center no-repeat #333333;min-width:30px;min-height:15px}
+scale[readonly="true"] .scale-thumb {background-image:none}
+.scale-thumb[disabled="true"] {-moz-border-top-colors:black #595959;-moz-border-right-colors:black #393939;-moz-border-bottom-colors:black #393939;-moz-border-left-colors:black #595959;background-color:#181818;background-image:url("chrome://global/skin/scale/scale-thumb-gripper-horz-dis.png")}
+.scale-thumb[orient="vertical"][disabled="true"] {background-image:url("chrome://global/skin/scale/scale-thumb-gripper-vert-dis.png")}
+scale:not([readonly="true"]):hover:active .scale-thumb:not([disabled="true"]) {-moz-border-top-colors:#ffb824 #ffc834;-moz-border-right-colors:#efb824 #ffc834;-moz-border-bottom-colors:#efb824 #ffc834;-moz-border-left-colors:#efb824 #ffc834}
+scale:not([readonly="true"]):hover .scale-thumb:not([disabled="true"]),scale:not([readonly="true"]):hover:active .scale-thumb:not([disabled="true"]) {background-image:url("chrome://global/skin/scale/scale-thumb-gripper-horz-hov.png");background-color:#555555}
+scale:not([readonly="true"]):hover .scale-thumb[orient="vertical"]:not([disabled="true"]),scale:not([readonly="true"]):hover:active .scale-thumb[orient="vertical"]:not([disabled="true"]) {background-image:url("chrome://global/skin/scale/scale-thumb-gripper-vert-hov.png");background-color:#555555}

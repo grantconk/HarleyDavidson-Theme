@@ -1,0 +1,74 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is Mozilla Communicator client code, released
+ * March 31, 1998.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+@import url("chrome://global/locale/intl.css");
+@import url("chrome://global/skin/formatting.css");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url(http://www.w3.org/1999/xhtml);
+vbox#bxText {padding:0px}
+tree#treeJSObject {padding:0px;margin:0px}
+toolbox#tbxInsToolbox {padding-bottom:2px}
+window#winInspectorMain toolbar.viewer-pane-header {-moz-appearance:none;margin-top:0px;margin-right:0px;margin-left:0px;margin-bottom:0px;border-top:3px solid;border-right:0px solid;border-left:0px solid;border-bottom:0px solid white;-moz-border-radius-topleft:0px;-moz-border-radius-topright:0px;-moz-border-radius-bottomright:0px;-moz-border-radius-bottomleft:0px;-moz-border-top-colors:rgb(71,71,71) rgb(82,82,82) rgb(92,92,92);-moz-border-right-colors:transparent;padding:1px 5px 2px 5px;background-color:rgb(102,102,102);color:white;-moz-border-top-colors:rgb(123,123,123) rgb(164,164,164) rgb(174,174,174);background-color:rgb(204,204,204);color:black;min-height:28px}
+window#winInspectorMain splitter#splPanels {-moz-appearance:none;border-width:6px 0px 5px 0px;border-style:solid;border-color:white;-moz-border-left-colors:none;-moz-border-right-colors:none;-moz-border-top-colors:rgb(143,143,143) rgb(184,184,184) rgb(194,194,194) white white white;-moz-border-bottom-colors:none;background-color:#f4f4f4;min-width:5px}
+window#winInspectorMain splitter#splPanels[orient="vertical"] {min-height:5px}
+window#winInspectorMain splitter#splPanels:hover {padding:5px 0px 5px 0px;background:url("chrome://global/skin/splitter/highlight.png") #f4f4f4 center repeat-y}
+window#winInspectorMain splitter#splPanels[orient="vertical"]:hover {padding:0px 5px 0px 5px;background:url("chrome://global/skin/splitter/highlight.png") #f4f4f4 center repeat-x}
+window#winInspectorMain box.viewer-pane-box-2 {border:0px solid green}
+tree#trDOMTree,tree#olStyleSheets,tree#treeJSObject{-moz-appearance:none!important;background:none center center no-repeat #f6f6f6;background:none center center no-repeat #b6b6b6}
+tree#trDOMTree treechildren::-moz-tree-row,tree#olStyleSheets treechildren::-moz-tree-row,tree#treeJSObject treechildren::-moz-tree-row{margin:0px 0px 1px 0px;background-color:#ffffff}
+tree#trDOMTree treechildren::-moz-tree-row(selected),tree#olStyleSheets treechildren::-moz-tree-row(selected),tree#treeJSObject treechildren::-moz-tree-row(selected) {background-color:#999999}
+tree#trDOMTree treechildren::-moz-tree-row(selected,focus),tree#olStyleSheets treechildren::-moz-tree-row(selected,focus),tree#treeJSObject treechildren::-moz-tree-row(selected,focus) {background-color:#b49351}
+page#winNodeDefault {padding:0px!important}
+#bxURLBar>#btnSelecting {list-style-image:url("chrome://xpi_skins/skin/inspector/btnSelecting.png")}
+#bxURLBar>#btnSelecting[checked="true"] {list-style-image:url("chrome://xpi_skins/skin/inspector/btnSelecting-act.png")}
+#bxURLBar>#btnSelecting[disabled="true"] {list-style-image:url("chrome://xpi_skins/skin/inspector/btnSelecting-dis.png")}
+#bxElement {background-color:#ffffff;padding:10px}
+#bxElement>grid {padding-bottom:5px}
+#bxElement label {-moz-margin-start:0px}
+#bxElement textbox {-moz-margin-end:0px}
+tree#olAttr {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+multipanelset#mpsBinding>.multipanelset-ibox>multipanel,multipanel {background-color:#cccccc}
+box.multipanel-label-box {background-color:transparent}
+page#winBoxModel {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6;padding:10px}
+page#winBoxModel>groupbox {background-color:none}
+page#winBoxModel caption {background-color:transparent;margin:0px;padding:0px 10px;font-weight:normal}
+page#winBoxModel menulist {margin:0px}
+page#winXBLBindings {background-color:#b6b6b6}
+.multipanel-content-box>tree,tree#olContent,tree#olMethods,tree#olProps,tree#olHandlers,tree#olResources,tree#olSourceCode {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+tree#olStyleRules {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+tree#olStyleProps {background:none center center no-repeat #b6b6b6}
+tree#olStyles {background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center center no-repeat #b6b6b6}

@@ -1,0 +1,13 @@
+.listBox {-moz-appearance:listbox;margin:2px 4px;border:2px solid;-moz-border-top-colors:#808080 black;-moz-border-right-colors:white #DFDFDF;-moz-border-bottom-colors:white #DFDFDF;-moz-border-left-colors:#808080 black;background-color:#b6b6b6}
+.indent {-moz-margin-start:23px;-moz-margin-end:23px}
+.small-indent {-moz-margin-start:15px}
+.uniWidthButton {min-width:8em}
+.settingsBox {margin:5px;padding:5px}
+#fileExtension {width:5em}
+#fileExtension.pluginsList {width:5.5em}
+#typeIcon,.extensionChildren::-moz-tree-image(fileExtension),.pluginTypesChildren::-moz-tree-image(fileExtension) {margin-top:0px;margin-bottom:0px;-moz-margin-start:0px;-moz-margin-end:5px}
+.pluginTypesChildren::-moz-tree-image(pluginEnabled) {margin-top:0px;margin-bottom:0px;-moz-margin-start:0px;-moz-margin-end:5px;list-style-image:url(chrome://mozapps/skin/pref/dot.gif)}
+.pluginTypesChildren::-moz-tree-image(pluginEnabled,enabled) {margin-top:0px;margin-bottom:0px;-moz-margin-start:0px;-moz-margin-end:5px;list-style-image:url(chrome://mozapps/skin/pref/check.gif)}
+.biggerIndent {-moz-margin-start:28px}
+#typeField {font-weight:bold}
+#defaultAppName {-moz-margin-start:6px!important}

@@ -1,0 +1,9 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] #navigator-toolbox {background:url("chrome://global/skin/subskins/toolbox-logo-8/nasa-logo-and-exhaust.alt4.png") top left no-repeat transparent!important}
+window[windowtype="navigator:browser"][theme="nasanightlaunch"] #toolbar-menubar,window[windowtype="navigator:browser"][theme="nasanightlaunch"] #nav-bar {padding-left:5px!important}
+window[windowtype="navigator:browser"][theme="nasanightlaunch"] #nav-bar {background:none transparent!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox {background-image:url("chrome://global/skin/subskins/toolbox-logos/baggerron.png")!important;background-position:top left!important;background-repeat:no-repeats!important;border-top:1px solid #202020!important;-moz-border-top-colors:#202020!important}
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox toolbarbutton[disabled="true"] {color:#555555!important}
+window[windowtype="navigator:browser"][theme="harley_davidson"] #toolbar-menubar,window[windowtype="navigator:browser"][theme="harley_davidson"] #nav-bar {padding-left:0px!important}
+#navigator-toolbox #PersonalToolbar {margin-left: 0px !important}
+/* --- end --- */

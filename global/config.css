@@ -1,0 +1,34 @@
+@import url("chrome://global/skin/");
+@import url("chrome://global/skin/checkbox.onlight.css");
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+#warningScreen{background-color:#181818;color:black;font-family:arial,message-box;font-size:8pt}
+#warningScreen>spacer {height:3em;max-height:3em}
+#warningBox{padding:3em;-moz-padding-start:30px;padding:3em 2em 3em 0px;border:10px solid white;-moz-border-radius:3px;margin-left:1em;margin-right:1em;margin-top:2.2em;color:black;background-color:#eeeeee}
+#warningInnerBox{max-width:45.4em}
+#warningTitle{margin:0 0 1em 0;font-size:160%;border-bottom:1px solid #cccccc;font-weight:bold;color:#b47331;padding-bottom:1.6em}
+#warningText{margin-left:0}
+#showWarningNextTime{margin-top:0.6em}
+#showWarningNextTime+hbox{margin:3em 0 0 0;border-top:1px solid #cccccc;padding-top:1em}
+#exclam{width:48px;height:48px;list-style-image:url("chrome://global/skin/icons/warning-large.png");margin-top:-6px;margin-left:10px;margin-right:11px}
+#warningButtonBox{-moz-box-pack:start}
+#warningInnerBox button {-moz-appearance:none;min-width:6.3em;margin:1px 5px 2px 5px;padding-left:1px;border:1px solid #bfbfbf;border-top:2px solid #bfbfbf;-moz-border-top-colors:#bfbfbf white;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;color:#333333;background:url("chrome://global/skin/button-onlight/outer-gradient-bg.png") top left repeat-x #d6d6d6}
+#warningInnerBox .button-box {border:1px solid transparent;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;padding-top:2px;-moz-padding-end:3px;padding-bottom:3px;-moz-padding-start:4px;margin:0px;background:url("chrome://global/skin/button-onlight/inner-gradient-bg.png") top left repeat-x #d6d6d6;-moz-background-origin:border;color:inherit}
+#warningInnerBox .button-text {margin:0!important;text-align:center}
+#warningInnerBox button[disabled="true"]>.button-box {padding-top:2px!important;-moz-padding-end:3px!important;padding-bottom:3px!important;-moz-padding-start:4px!important}
+#warningInnerBox button[type="menu-button"] {-moz-box-align:center;-moz-box-pack:center;margin:0;border:none}
+#warningInnerBox .button-menu-dropmarker,#warningInnerBox .button-menubutton-dropmarker {margin:1px;background-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-dn.png");background-repeat:no-repeat;background-position:center center;min-width:11px;min-height:11px}
+#warningInnerBox button:hover .button-menu-dropmarker,#warningInnerBox button:hover .button-menubutton-dropmarker,#warningInnerBox button:active .button-menu-dropmarker,#warningInnerBox button:active .button-menubutton-dropmarker{background-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-dn-hov.png")}
+#warningInnerBox .button-menu-dropmarker[disabled="true"],#warningInnerBox .button-menubutton-dropmarker[disabled="true"] {background-image:url("chrome://global/skin/dropmarker/arrow-dropmarker-dn-dis.png")}
+#warningInnerBox .button-menubutton-dropmarker[open="true"] {margin-top:2px;margin-bottom:0px;-moz-margin-start:2px;-moz-margin-end:0px}
+#warningInnerBox button:hover:not([disabled="true"]) {color:black;background-image:url("chrome://global/skin/button-onlight/outer-gradient-hover-bg.png");background-color:#dedede;border:1px solid #999999;border-top:2px solid #999999;-moz-border-top-colors:#999999 white;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none}
+#warningInnerBox button:hover:active:not([disabled="true"]) {color:black;background-image:url("chrome://global/skin/button-onlight/outer-gradient-active-bg.png");background-color:#ffffff;border:1px solid #424242;border-top:2px solid #424242;-moz-border-top-colors:#424242 #dedede;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none}
+#warningInnerBox button[disabled="true"] {color:#C4C4C4}
+#warningInnerBox button[open="true"],#warningInnerBox button[checked="true"] {border-color:black}
+#warningInnerBox button:hover:not([disabled="true"])>.button-box {background-image:url("chrome://global/skin/button-onlight/inner-gradient-hover-bg.png");-moz-background-origin:border;background-color:inherit}
+#warningInnerBox button:hover:active:not([disabled="true"])>.button-box,#warningInnerBox button[open="true"]:not([disabled="true"])>.button-box,#warningInnerBox button[checked="true"]:not([disabled="true"])>.button-box {background-image:url("chrome://global/skin/button-onlight/inner-gradient-active-bg.png");-moz-background-origin:border;background-color:inherit}
+#warningInnerBox button:focus:not([disabled="true"])>.button-box,#warningInnerBox button[default="true"]:not([disabled="true"])>.button-box {border:1px solid transparent;outline:1px dotted #666666;-moz-outline-offset:-3px}
+button#warningButton{margin-top:1em;margin-left:0px}
+#configTreeBody::-moz-tree-cell-text(user){font-weight:bold}
+#configTreeBody::-moz-tree-cell-text(locked){font-style:italic}
+#configTree{margin:5px 4px!important;border:1px solid black;background:url("chrome://global/skin/watermarks/nasa-logo.600by600.bw.b6b6b6.png") center center no-repeat #b6b6b6}
+#filterRow{margin-top:5px}

@@ -1,0 +1,63 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   mcdavis941 <mcdavis941@netscape.net>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+#safebrowsing-palm-message {display:none;position:fixed;top:0px;left:0px;z-index:2}
+#safebrowsing-palm-message-content{background-color:#f4f4f4;-moz-box-sizing:border-box;-moz-border-radius:3px;margin-top:-5px;padding:10px;z-index:1;border:10px solid white;color:black;background-color:#eeeeee;-moz-background-clip:padding}
+.safebrowsing-palm-fixed-width {width:400px;max-width:400px}
+.safebrowsing-palm-title {font-size:20px;font-weight:bold}
+#safebrowsing-palm-title-icon {height:24px;width:24px;max-height:24px}
+.safebrowsing-palm-paragraph {padding-bottom:2em}
+#safebrowsing-palm-close {cursor:pointer;max-width:16px!important;height:16px;width:16px;z-index:10;list-style-image:url("chrome://browser/skin/safebrowsing/close16x16.png");list-style-image:url("chrome://global/skin/icons/close.onlightnotification.png");-moz-image-region:rect( 0px,16px,16px,0px )}
+#safebrowsing-palm-message-tail-container {display:none;position:fixed;top:0px;left:0px;border-right:2px solid;z-index:3;height:67px;margin:0;padding:0;border:0px solid black}
+#safebrowsing-palm-message-tail {height:67px;width:24px;max-width:24px;z-index:3}
+#safebrowsing-palm-message-titlebox {background-image:url("chrome://browser/skin/safebrowsing/warning24x24.png");background-repeat:no-repeat;background-position:0px 0px;padding-bottom:5px;padding-left:0px;min-height:26px;text-indent:34px;font-size:20px;font-weight:bold;margin:-16px 0px 2px 0px}
+#safebrowsing-palm-message-title {padding-left:5px}
+#safebrowsing-palm-message-actionbox {padding:10px 10px 15px;text-align:center}
+.safebrowsing-palm-bigtext {font-size:14px;font-weight:bold}
+.safebrowsing-palm-smalltext {font-size:10px}
+#safebrowsing-palm-google-logo {height:32px;max-height:32px;width:78px}
+#safebrowsing-page-canvas {position:fixed}
+#safebrowsing-dim-area-canvas {background-image:url("chrome://browser/skin/safebrowsing/dim.png");position:fixed}
+#safebrowsing-pref-caption {background-color:#2222EE}
+#safebrowsing-pref-caption text {text-align:center;color:#FFFFFF;font-size:150%;font-family:arial,helvetica,sans-serif}
+#safebrowsing-urlbar-icon {padding-right:2px}
+#safebrowsing-urlbar-icon[level="safe"] {list-style-image:none}
+#safebrowsing-urlbar-icon[level="warn"] {list-style-image:url("chrome://browser/skin/safebrowsing/warning16x16.png")}
+#safebrowsing-dim-area-transp {background-image:url("chrome://browser/skin/safebrowsing/dim.png");height:0px;left:0px;top:0px;position:fixed;display:none}
+#safebrowsing-palm-content {margin-left:0;margin-right:0;-moz-margin-start:1px;-moz-margin-end:0}
+#safebrowsing-palm-extended-message .safebrowsing-palm-paragraph {margin-left:0;margin-right:0;-moz-margin-start:1px;-moz-margin-end:0}
+#safebrowsing-palm-close-container {height:16px;margin:0;padding:0}

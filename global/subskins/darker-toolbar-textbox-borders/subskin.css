@@ -1,0 +1,7 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] toolbox#navigator-toolbox textbox {border:2px solid black!important;-moz-border-top-colors:#070707 #141414!important;-moz-border-right-colors:#070707 #141414!important;-moz-border-bottom-colors:#070707 #141414!important;-moz-border-left-colors:#070707 #141414!important}
+window[windowtype="navigator:browser"][theme="nasanightlaunch"] toolbox#navigator-toolbox hbox.searchbar-box .searchbar-textbox {border-left:0px solid black!important;-moz-border-left-colors:none!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox textbox {border:2px solid black!important;-moz-border-top-colors:#070707 #141414!important;-moz-border-right-colors:#070707 #141414!important;-moz-border-bottom-colors:#070707 #141414!important;-moz-border-left-colors:#070707 #141414!important}
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox hbox.searchbar-box .searchbar-textbox {border-left:0px solid black!important;-moz-border-left-colors:none!important}
+/* --- end --- */
+#gtbSearchBox #gtbGoogleSearchBox .gtb-search-box {border:0px solid black!important;-moz-border-top-colors:none!important;-moz-border-right-colors:none!important;-moz-border-bottom-colors:none!important;-moz-border-left-colors:none!important;background:none!important}

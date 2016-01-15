@@ -1,0 +1,15 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/*.wizard-header {border-bottom:2px solid black;-moz-border-bottom-colors:#333333 black;padding:0px 0px 3px 0px;color:black;min-height:58px;background:url("chrome://global/skin/logos/nasa-logo.wizard-header.png") bottom right no-repeat transparent}*/
+/* --- Show HD logo --- */
+.wizard-header {border-bottom:2px solid black;-moz-border-bottom-colors:#333333 black;padding:0px 0px 3px 0px;color:black;min-height:58px;background:url("chrome://global/skin/logos/hd-logo.wizard-header.png") bottom right no-repeat transparent}
+/* --- end --- */
+.wizard-header-box-text {-moz-box-pack:end}
+wizard[description=""] .wizard-header-description,wizard:not([description]) .wizard-header-description{display:none}
+.wizard-header-label {font-weight:bold;color:#b47331;color:#f0f0f0;-moz-margin-start:1px!important;-moz-margin-end:0px!important;margin-left:0px!important;margin-right:0px!important}
+.wizard-header-description {color:black;-moz-margin-start:1px!important;-moz-margin-end:0px!important;margin-left:0px!important;margin-right:0px!important}
+.wizard-page-box {margin:0;padding-top:1.5em}
+.wizard-buttons-separator {margin-bottom:0px!important;display:none}
+.wizard-buttons {-moz-margin-end:-5px}
+.wizard-buttons-box-2 {margin:0px}
+.wizard-button[wizardbutton="finish"],.wizard-button[wizardbutton="next"] {-moz-margin-start:-1px!important}
+.wizard-button[wizardbutton="back"] {-moz-margin-end:0px!important}

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:chrome="http://www.mozilla.org/rdf/chrome#">
+
+  <!-- List all the skins being supplied by this theme -->
+  <RDF:Seq about="urn:mozilla:skin:root">
+    <RDF:li resource="urn:mozilla:skin:Harley_Davidson" />
+  </RDF:Seq>
+
+  <!-- classic Information -->
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson"
+        chrome:displayName="Harley Davidson"
+        chrome:author="Grant Conklin"
+        chrome:authorURL="http://www.caffeinated.org/"
+        chrome:description="Firefox theme for Harley Davidson enthusiasts!"
+        chrome:name="Harley_Davidson"
+        chrome:image="preview.png">
+    <chrome:packages>
+      <RDF:Seq about="urn:mozilla:skin:Harley_Davidson:packages">
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:browser"/>
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:communicator"/>
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:help"/>
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:global"/>
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:mozapps"/>
+        <RDF:li resource="urn:mozilla:skin:Harley_Davidson:xpi_skins"/>
+      </RDF:Seq>
+    </chrome:packages>
+  </RDF:Description>
+
+  <!-- Version Information.  State that we work only with major version 1 of this package. -->
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:browser"       chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:communicator"  chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:help"          chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:global"        chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:mozapps"       chrome:skinVersion="1.5"/>
+  <RDF:Description about="urn:mozilla:skin:Harley_Davidson:xpi_skins"     chrome:skinVersion="1.5"/>
+</RDF:RDF>

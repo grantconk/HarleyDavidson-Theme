@@ -1,0 +1,16 @@
+dialog#xpinstallConfirm {margin:0;border:0;padding:0;background:url("chrome://global/skin/window-gradient-bg.top-cropped.png") top left repeat-x #181818}
+.dialog-content-box {margin:0;border:0;padding:10px}
+.listbox {-moz-appearance:none;margin:2px 4px;border:2px solid;-moz-border-top-colors:#cccccc #555555;-moz-border-right-colors:white #DFDFDF;-moz-border-bottom-colors:white #DFDFDF;-moz-border-left-colors:#cccccc #555555;background-color:#b6b6b6;color:black;background:url("chrome://global/skin/watermarks/nasa-logo.300by300.bw.b6b6b6.png") center no-repeat #b6b6b6}
+#itemList {height:14em;margin:5px 4px 10px 4px;background-color:#b6b6b6;border:1px solid black;-moz-border-top-colors:none;-moz-border-right-colors:none;-moz-border-bottom-colors:none;-moz-border-left-colors:none;background:url("chrome://global/skin/backgrounds/xpinstall-bg.jpg") top center no-repeat #71716f}
+installitem {padding-top:5px;padding-bottom:5px;-moz-padding-start:10px;-moz-padding-end:10px;border-bottom:1px dotted #666666;background:url("chrome://mozapps/skin/xpinstall/item-brighten.png") top left repeat transparent;-moz-background-origin:content}
+.warning {font-weight:bold}
+.xpinstallItemIcon {width:32px;height:32px;max-width:32px!important;max-height:32px!important;-moz-margin-end:5px;margin-top:0px;margin-bottom:0px;padding:0px;list-style-image:url("chrome://mozapps/skin/xpinstall/xpinstallItemGeneric.png")!important}
+.xpinstallItemName {font-weight:bold;background-color:transparent}
+.xpinstallItemSigned {font-style:italic;background-color:transparent}
+.xpinstallItemSigned[signed=false] {color:#ED1C24;color:#FF5012;font-style:normal;font-weight:bold}
+.xpinstallItemNameRow {padding-bottom:3px;padding-bottom:0px;background-color:transparent}
+.xpinstallItemDetailsRow {padding:0px 0px 3px 0px;background-color:transparent}
+.xpinstallItemFromLabel {background-color:transparent;margin-top:0;margin-bottom:0}
+.xpinstallItemURL {-moz-appearance:none;border:none;color:black;background-color:transparent;background-image:none;margin-top:0;margin-bottom:0}
+installitem>hbox>vbox {background-color:#0000cc;background-color:transparent;-moz-box-pack:center;-moz-box-align:stretch}
+.dialog-button-box {margin:0;border:0;padding:0px 10px 4px 5px;background-color:#070707}

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<bindings id="testBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+    <binding id="testBinding">
+    <implementation>
+      <constructor>
+        <![CDATA[
+        var mainWindow = document.getElementById("main-window");
+        //mainWindow.setAttribute("userAgent", window.navigator.userAgent);
+
+        var ai = Components.classes["@mozilla.org/xre/app-info;1"]
+          .getService(Components.interfaces.nsIXULAppInfo);
+
+        if( !(mainWindow.getAttribute("appInfo_appBuildID")) )        { mainWindow.setAttribute("appInfo_appBuildID", ai.appBuildID); }
+        if( !(mainWindow.getAttribute("appInfo_name")) )              { mainWindow.setAttribute("appInfo_name", ai.name); }
+        if( !(mainWindow.getAttribute("appInfo_platformBuildID")) )   { mainWindow.setAttribute("appInfo_platformBuildID", ai.platformBuildID); }
+        if( !(mainWindow.getAttribute("appInfo_platformVersion")) )   { mainWindow.setAttribute("appInfo_platformVersion", ai.platformVersion); }
+        if( !(mainWindow.getAttribute("appInfo_vendor")) )            { mainWindow.setAttribute("appInfo_vendor", ai.vendor); }
+        if( !(mainWindow.getAttribute("appInfo_version")) )           { mainWindow.setAttribute("appInfo_version", ai.version); }
+        if( !(mainWindow.getAttribute("appInfo_majorVersion")) )      { mainWindow.setAttribute("appInfo_majorVersion", ai.version.replace(/(^[0-9]+)(.*$)/, "$1")); }
+        ]]>
+      </constructor>
+    </implementation>
+  </binding>
+</bindings>
+

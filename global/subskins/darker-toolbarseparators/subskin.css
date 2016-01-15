@@ -1,0 +1,4 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] toolbox#navigator-toolbox>toolbar toolbarseparator {border-right:1px solid transparent!important;border-left:1px dotted black!important}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] toolbox#navigator-toolbox>toolbar toolbarseparator {border-right:1px solid transparent!important;border-left:1px dotted black!important}
+/* --- end --- */

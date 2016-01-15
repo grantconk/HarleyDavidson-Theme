@@ -1,0 +1,2 @@
+#browser tab.tabbrowser-tab:not([selected="true"]):hover {background:url("browsertab-middle-gradient-hover-bg.png")!important;-moz-background-clip:padding!important;color:black!important}
+#browser tab.tabbrowser-tab[selected="true"] {background:url("browsertab-middle-gradient-selected-bg.png")!important;-moz-background-clip:padding!important}

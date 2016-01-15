@@ -1,0 +1,4 @@
+/*window[windowtype="navigator:browser"][theme="nasanightlaunch"] menubar#main-menubar {background:url(chrome://global/skin/subskins/darker-menubar-background/bg.png) center left repeat-x transparent}*/
+/* --- check for HD theme --- */
+window[windowtype="navigator:browser"][theme="harley_davidson"] menubar#main-menubar {background:url(chrome://global/skin/subskins/darker-menubar-background/bg.png) center left repeat-x transparent}
+/* --- end --- */

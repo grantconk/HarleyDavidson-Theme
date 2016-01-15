@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<bindings id="scribefireBindings"
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:xbl="http://www.mozilla.org/xbl">
+  <binding id="mainViewTabsBinding">
+    <content>
+      <xul:image class="main-view-tab-icon" height="16" width="16"/>
+    </content>
+  </binding>
+</bindings>
+

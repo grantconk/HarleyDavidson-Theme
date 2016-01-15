@@ -1,0 +1,13 @@
+#clientBox {}
+#extensionName {font-size:large;font-weight:bold}
+#extensionVersion {color:#999999}
+#genericAbout {padding:0px;min-height:200px;width:30em}
+#groove {margin-top:0px}
+separator#groove {display:none}
+#clientBox {padding:10px}
+#extensionDescription {color:#cccccc}
+#extensionDescription,#extensionContributors,#creatorBox,#contributorsBox {-moz-margin-start:6px}
+#extensionCreator,.contributor {margin:0px}
+#extensionCreatorLabel,#extensionContributors {border-top:1px solid #333333;padding:5px 0px 3px 0px;margin-top:5px;font-weight:bold}
+.dialog-button-box {}
+.dialog-button-box>.dialog-button {-moz-appearance:none;margin:0px;padding:0px}

@@ -1,0 +1,4 @@
+treechildren.autocomplete-treebody::-moz-tree-row(selected) {background:url("chrome://global/skin/tree/orange-gradient-bg.desat4.png") left top repeat-x #C1813B!important}
+.autocomplete-treebody::-moz-tree-row(menuactive) {background:url("chrome://global/skin/tree/orange-gradient-bg.desat4.png") left top repeat-x #C1813B!important}
+menupopup>menu[_moz-menuactive="true"],menupopup>menuitem[_moz-menuactive="true"],popup>menu[_moz-menuactive="true"],popup>menuitem[_moz-menuactive="true"] {background:url("chrome://global/skin/tree/orange-gradient-bg.desat4.png") left top repeat-x #C1813B!important;color:white!important}
+menupopup>menu[_moz-menuactive="true"][disabled="true"],menupopup>menuitem[_moz-menuactive="true"][disabled="true"],popup>menu[_moz-menuactive="true"][disabled="true"],popup>menuitem[_moz-menuactive="true"][disabled="true"] {color:#666666!important}

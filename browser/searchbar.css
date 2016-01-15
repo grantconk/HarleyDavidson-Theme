@@ -1,0 +1,61 @@
+/* ***** BEGIN LICENSE BLOCK *****
+ * Version: MPL 1.1/GPL 2.0/LGPL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 1.1 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is mozilla.org code.
+ *
+ * The Initial Developer of the Original Code is
+ * Netscape Communications Corporation.
+ * Portions created by the Initial Developer are Copyright (C) 1998-1999
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *   mcdavis941 <mcdavis941@netscape.net>
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either the GNU General Public License Version 2 or later (the "GPL"), or
+ * the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ * in which case the provisions of the GPL or the LGPL are applicable instead
+ * of those above. If you wish to allow use of your version of this file only
+ * under the terms of either the GPL or the LGPL, and not to allow others to
+ * use your version of this file under the terms of the MPL, indicate your
+ * decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL or the LGPL. If you do not delete
+ * the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL or the LGPL.
+ *
+ * ***** END LICENSE BLOCK ***** */
+
+.searchbar-textbox {width:12em;margin-left:0}
+.searchbar-textbox {border:0px solid black;background:none}
+searchbar .textbox-input-box {margin:0px 3px 0px 0px;border:2px solid #0d0d0d;-moz-border-top-colors:#070707 #141414;-moz-border-right-colors:#070707 #141414;-moz-border-bottom-colors:#070707 #141414;-moz-border-left-colors:#070707 #141414;background:url("chrome://global/skin/textbox/textbox-gradient-bg.alt5.png") top left repeat-x transparent}
+#searchbar .textbox-input-box {}
+.searchbar-engine-button {margin:0px;margin-right:3px;border:0px;min-width:0px;background:url("chrome://global/skin/textbox/textbox-gradient-bg.png") repeat-x top left black}
+.searchbar-engine-button>.button-box {background:none;border:0px solid black;padding-top:1px;padding-bottom:2px}
+/*.searchbar-engine-image {min-height:16px;height:100%;width:16px;list-style-image:url("chrome://global/skin/icons/folder-item.png");-moz-image-region:rect(0px,16px,16px,0px);margin:0px}*/
+/* --- Use HD logo for folder icon --- */
+.searchbar-engine-image {min-height:16px;height:100%;width:16px;list-style-image:url("chrome://global/skin/icons/folder-item.hd.png");-moz-image-region:rect(0px,16px,16px,0px);margin:0px}
+/* --- end --- */
+.searchbar-dropmarker-image {list-style-image:url("chrome://browser/skin/search-arrow.png");margin-left:-6px;margin-top:8px}
+.search-go-button {list-style-image:url("chrome://browser/skin/Search.png");-moz-image-region:rect(0px 16px 16px 0px);padding:0px;border:1px solid transparent;background:none}
+.search-go-button:hover {-moz-image-region:rect(0px 32px 16px 16px);background:none}
+.search-go-button:hover:active {-moz-image-region:rect(0px,32px,16px,16px);background:none}
+.search-go-button[disabled="true"]{-moz-image-region:rect(0px,48px,16px,32px);background:none}
+.searchbar-engine-menuitem[selected="true"]>.menu-iconic-text {font-weight:bold}
+hbox.searchbar-box dropmarker.autocomplete-history-dropmarker {-moz-binding:url("chrome://global/content/bindings/autocomplete.xml#history-dropmarker")}
+.searchbar-engine-button[addengines="true"] {background:url("chrome://browser/skin/searchbar-addengine-glow.5.png") left center no-repeat transparent}
+.searchbar-box .searchbar-textbox {border:2px solid black;-moz-border-top-colors:#070707 #141414;-moz-border-right-colors:#070707 #141414;-moz-border-bottom-colors:#070707 #141414;-moz-border-left-colors:#070707 #141414;background:url("chrome://global/skin/textbox/textbox-gradient-bg.alt5.png") top left repeat-x transparent;border-left:none;-moz-margin-start:0px}
+.searchbar-box .searchbar-engine-image {-moz-margin-start:2px}
+.searchbar-box .textbox-input-box {-moz-margin-start:1px;background:none;border:0px solid black}
+.searchbar-box .searchbar-engine-button {padding:2px 2px 1px 1px;border:2px solid transparent;-moz-border-top-colors:black #111111;-moz-border-bottom-colors:black #111111;-moz-border-left-colors:black #111111;border-right:none;margin:2px 4px 2px 0px;-moz-margin-end:0px;background:url("chrome://global/skin/textbox/textbox-gradient-bg.png") repeat-x top left black}
+.search-go-button .toolbarbutton-text { display:none; }
+toolbar[mode="text"] .search-go-button .toolbarbutton-text { display:-moz-box; }

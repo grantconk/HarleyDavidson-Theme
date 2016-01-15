@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<!--
+//  GPL'd tab-opening code from DTA.
+//  TODO: Need license statement here.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mozapps/skin/about/about.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://mozapps/locale/extensions/about.dtd">
+
+<window id="aboutHarleyDavidson" class="aboutHarleyDavidsonTheme"
+        title="About Harley Davidson"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml" >
+
+  <script type="application/x-javascript"><![CDATA[
+
+  function openTab(url) {
+    window.opener.openURL(url);
+  }
+
+  ]]></script>
+
+  <stringbundleset id="aboutSet">
+    <stringbundle id="extensionsStrings" src="chrome://mozapps/locale/extensions/extensions.properties"/>
+  </stringbundleset>
+
+  <vbox class="dialog-content-box box-inherit" flex="1">
+
+    <vbox id="clientBox" flex="1">
+      <vbox id="aboutHeader" class="aboutHeader" flex="0">
+      <label id="extensionName" crop="right" value="Harley Davidson"/>
+      <label id="extensionVersion" crop="right" value="Version 1.4"/>
+      <description id="extensionDescription" value="Firefox theme for Harley Davidson enthusiasts!"/>
+      </vbox>
+
+      <label id="extensionCreatorLabel">&creator.label;</label>
+      <hbox id="creatorBox">
+        <label id="extensionCreator" flex="1" crop="right" value="Grant Conklin"/>
+        <label id="extensionHomepage" class="text-link" value="&homepage.label;"
+          onclick="openTab('http://www.caffeinated.org/mozilla/'  ); "
+          tooltiptext="http://www.caffeinated.org/mozilla/"/>
+      </hbox>
+
+      <label id="disclaimerLabel">Disclaimer</label>
+      <hbox id="disclaimerBox">
+        <label id="disclaimerText" flex="1" crop="right" value="This theme is not officially endorsed by or affiliated with Harley Davidson."/>
+      </hbox>
+
+      <hbox><label id="extensionContributors">&contributors.label;</label></hbox>
+      <vbox flex="1" id="contributorsBox">
+        <label class="contributor" value="NASA Dark Firefox Theme Team" />
+      </vbox>
+
+      <vbox id="famfamfamCreditsBox">
+        <label id="famfamfamLabel">FamFamFam Icons</label>
+        <vbox id="famfamfamBox" flex="0">
+          <hbox>
+          <label id="famfamfamText" flex="0" crop="right" value="Some icon image files are (via the Minefield default theme) from the "/>
+          <label flex="0" id="famfamfamLink" class="text-link" onclick="openTab('http://www.famfamfam.com/lab/icons/silk/'); " value="FAMFAMFAM Silk Icon Set"  tooltiptext="http://www.famfamfam.com/lab/icons/silk/"/>
+          </hbox>
+          <hbox>
+          <label id="famfamfamCCText" flex="0" crop="right" value="which is licensed under a "/>
+          <label flex="0" id="famfamfamCCLink" class="text-link" onclick="openTab('http://creativecommons.org/licenses/by/2.5/'); " value="Creative Commons Attribution 2.5 License"  tooltiptext="http://creativecommons.org/licenses/by/2.5/"/>
+          <label flex="0" value="." />
+          </hbox>
+        </vbox>
+      </vbox>
+
+      <!--<vbox id="launchVideoBox">
+        <label id="launchLabel">STS-116 Launch Video</label>
+        <hbox id="launchBox" flex="0">
+          <label id="launchText" flex="0" crop="right" value="Watch the "/>
+          <label flex="0" id="launchLink" class="text-link" onclick="openTab('chrome://global/skin/extras/video.html'); " value="night launch of STS-116"  tooltiptext="chrome://global/skin/extras/video.html"/>
+          <label flex="0" value=" from December 9, 2006." />
+        </hbox>
+      </vbox>-->
+
+      <vbox id="paypalBox">
+        <label id="paypalLabel">Like This Theme?</label>
+        <hbox id="paypalBox" flex="0">
+          <label id="paypalText" flex="0" crop="right" value="I hope you do.  You could "/>
+          <label flex="0" id="paypalLink" class="text-link" onclick="openTab('https://www.paypal.com/sendmoney?email=paypal@caffeinated.org'); " value="support my time to keep it going" tooltiptext="https://www.paypal.com/sendmoney?email=paypal@caffeinated.org"/>
+          <label flex="0" value=" with Paypal." />
+        </hbox>
+      </vbox>
+
+    </vbox>
+
+  </vbox>
+
+  <hbox class="dialog-button-box" flex="1">
+    <button onclick="close();" oncommand="close();" label="OK" />
+  </hbox>
+
+</window>
+

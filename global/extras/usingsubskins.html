@@ -1,0 +1,241 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Using Subskins</title>
+<link rel="stylesheet" type="text/css" href="chrome://global/skin/extras/extras.lightondark.css">
+<link rel="icon" type="image/png" id="favicon" href="chrome://global/skin/extras/favicon.png"/>
+<style>
+#what-is-a-subskin {
+  margin-right: 200px;
+}
+#inner-body-2 {
+  background-image: url(http://i54.photobucket.com/albums/g112/mcdavis941/usingsubskins-400.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: transparent;
+}
+</style>
+</head>
+  <body>
+
+    <div id="top-round-corner-strip"><div id="top-right-round-corner"></div></div>
+    <div id="inner-body-1">
+      <div id="inner-body-2">
+
+  <p id="backtrack-nav"><span class="backtracknav-parent"><a href="extras.html">Extras Overview</a></span> &raquo; <span class="backtracknav-current-page">Using Subskins</span></p>
+  <br>
+  <a name="what_is_a_subskin"><h6>What is a Subskin</h6></a>
+
+  <div id="what-is-a-subskin" class="subtopic-group">
+    <!-- needs its own div so we can add extra spacing on the right over bg image -->
+
+  <p>A subskin is an optional mini-theme that adds to an existing theme.</p>
+
+  <p>Subskins change the look of one small part of Firefox (like changing colors or background images, or anything a theme can change on its own, really), beyond what a theme already does.  Subskins are used by theme authors to make parts of a theme optional, instead of the same for everyone.</p>
+
+  <!-- p>A subskin is a set of optional theme rules that add to an existing theme.  Subskins do things like change colors or background images (or anything a theme can change on its own, really) of one small part of Firefox, beyond what a theme already does.  Subskins are used by theme authors to make parts of a theme optional, instead of the same for everyone.</p -->
+
+  <p>This theme, Harley Davidson, offers several different subskins.  For example, some subskins add HD images to the toolbar background.  You can choose one or more to tweak your browser.  <a href="subskins.html">See the list of subskins here</a>.</p>
+
+  <p>With this theme, subskins are included in the theme; there's nothing extra to download.</p>
+
+  <p>Subskins can work different ways in different themes.  Everything we say here applies of course to subskins as implemented in this theme.</p>
+
+  </div>
+
+  <a name="choosing_and_applying_subskins"><h6>Choosing and Applying Subskins</h6></a>
+
+  <div class="subtopic-group">
+
+  <p>To apply a subskin, you add some code to your <a href="http://kb.mozillazine.org/UserChrome.css">userChrome.css</a> file.  userChrome.css is a file that you (the Firefox end user) edit to tweak the appearance of Firefox.  When Firefox starts up, it reads this file and then applies any commands you may have added to this file.  (userChrome.css can contain other commands than just subskin commands, but here we're focusing on subskins only.)  Finding and editing userChrome.css is discussed <a href="#finding_and_editing_userchrome_css">below</a>.</p>
+
+  <p>For each subskin you want to apply (you can choose zero, one, or many) you add a line to userChrome.css of the form:</p>
+
+  <pre class="code">
+@import url("chrome://global/skin/subskins/window-picture-2/subskin.css");
+  </pre>
+
+  <p>That line adds a subskin called "window-picture-2".</p>
+
+  <p>The next example shows three different import statements.  These add three subskins at once (in this example, the ones called "window-picture-2", "toolbox-logo-8", and "lighter-toolbars-2").  You can see that the import statements are mostly the same; the only thing that changes is the name of the subskin.</p>
+
+  <pre class="code">
+@import url("chrome://global/skin/subskins/window-picture-2/subskin.css");
+@import url("chrome://global/skin/subskins/toolbox-logo-8/subskin.css");
+@import url("chrome://global/skin/subskins/lighter-toolbars-2/subskin.css");
+  </pre>
+
+  <p>To add a subskin, there's only four things you have to get right.</p>
+
+  <ol>
+  <li>You need to edit the right userChrome.css file.  More about this <a href="#finding_and_editing_userchrome_css">below</a>.</li>
+  <li>You need the right import statement(s).  You can just copy and paste from the <a href="subskins.html">list of subskins</a>.</li>
+  <li>You need to paste before any namespace statement.  If your userChrome.css has any namespace statement, make sure it comes after your import statements.  That's just how it works.  Other than that, you can ignore namespace statements, if any.</li>
+  <li>You need to restart Firefox for any userChrome.css changes to take effect.</li>
+  </ol>
+
+  </div>
+
+  <a name="finding_and_editing_userchrome_css"><h6>Finding and Editing userChrome.css</h6></a>
+
+  <div class="subtopic-group">
+
+  <p>Editing userChrome.css is super-easy.  It's a text file, and all you need is a text editor.</p>
+
+  <p>Finding it, on the other hand, is kind of a headache.  The <a href="http://kb.mozillazine.org/UserChrome.css">location is documented here</a>, but it depends on what kind of operating system (e.g., Windows vs. Linux) you're on, what user you're logged in as on your computer, which Firefox <a href="http://kb.mozillazine.org/Profile_folder">profile</a> you're using, and where you installed Firefox.  Even worse, Firefox is installed, by default, <em>without</em> any userChrome.css, relying on you to create one if you want to use one.  This means you can't even run a search on your hard drive to find it.</p>
+
+  <p>Fortunately there's an easier way.  Firefox users are smart hip people and one of them, Mel Reyes, created a great tool called MTLI. (It's free; <a href="http://addons.mozilla.org/en-US/firefox/addon/421">get it here</a>).  Once this tool is installed and Firefox is restarted, just open the Tools menu and pick "Edit My Config >> Chrome Editor".  This will open a window where you can type right into your userChrome.css.</p>
+
+  <p>There's one last wrinkle: by default, Firefox doesn't create the folder/directory that userChrome.css lives in either.  This means that, to save your changes, you'll need to create this folder if it doesn't already exist.  This folder is called "chrome".  With MTLI, you'll see that path to the file displayed at the bottom of the Chrome Editor window.  Just use your computer's file manager (e.g., Windows Explorer) to create this folder at the listed location.  Problem solved.</p>
+
+  </div>
+
+  <a name="adding_a_subskin_to_userchrome_css__before_and_after_example"><h6>Adding a Subskin to userChrome.css: Before-and-After Example</h6></a>
+
+  <div class="subtopic-group">
+
+<p>Here are before and after examples of userChrome.css, as provided by MTLI, modified to use subskins.  (MTLI userChrome.css samples used with permission from Mel Reyes.)</p>
+
+<div style="width:45%; overflow:auto; float:left; background: url(chrome://global/skin/extras/code-panel-header-gradient-bg.png) top left repeat-x transparent;">
+  <p style="min-height:11em; padding-left:1em; padding-right:1em;">BEFORE: Here's the default, empty userChrome.css created by MTLI.</p>
+
+  <pre class="code">
+/*
+ * Edit this file and copy it as userChrome.css into your
+ * profile-directory/chrome/
+ */
+
+/*
+ * This file can be used to customize the look of Mozilla's user interface
+ * You should consider using !important on rules which you want to
+ * override default settings.
+ */
+
+
+
+
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* set default namespace to XUL */
+
+
+/*
+ * Some possible accessibility enhancements:
+ */
+/*
+ * Make all the default font sizes 20 pt:
+ *
+ * * {
+ *   font-size: 20pt !important
+ * }
+ */
+/*
+ * Make menu items in particular 15 pt instead of the default size:
+ *
+ * menupopup > * {
+ *   font-size: 15pt !important
+ * }
+ */
+/*
+ * Give the Location (URL) Bar a fixed-width font
+ *
+ * #urlbar {
+ *    font-family: monospace !important;
+ * }
+ */
+
+/*
+ * Eliminate the throbber and its annoying movement:
+ *
+ * #throbber-box {
+ *   display: none !important;
+ * }
+ */
+
+/*
+ * For more examples see http://www.mozilla.org/unix/customizing.html
+ */
+</pre>
+</div>
+
+<div style="width:45%; overflow:auto; background: url(chrome://global/skin/extras/code-panel-header-gradient-bg.png) top left repeat-x transparent; margin-left: 2em;">
+  <p style="min-height:11em;padding-left:1em;padding-right:1em;">AFTER: Here's the same file after adding three subskins.  You can see that the only change is the addition of the three import statements.  (Note also that we were careful to put the import statements <em>before</em> the namespace statement.)</p>
+
+  <pre class="code">
+/*
+ * Edit this file and copy it as userChrome.css into your
+ * profile-directory/chrome/
+ */
+
+/*
+ * This file can be used to customize the look of Mozilla's user interface
+ * You should consider using !important on rules which you want to
+ * override default settings.
+ */
+
+@import url("chrome://global/skin/subskins/window-picture-2/subskin.css");
+@import url("chrome://global/skin/subskins/toolbox-logo-8/subskin.css");
+@import url("chrome://global/skin/subskins/lighter-toolbars-2/subskin.css");
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* set default namespace to XUL */
+
+
+/*
+ * Some possible accessibility enhancements:
+ */
+/*
+ * Make all the default font sizes 20 pt:
+ *
+ * * {
+ *   font-size: 20pt !important
+ * }
+ */
+/*
+ * Make menu items in particular 15 pt instead of the default size:
+ *
+ * menupopup > * {
+ *   font-size: 15pt !important
+ * }
+ */
+/*
+ * Give the Location (URL) Bar a fixed-width font
+ *
+ * #urlbar {
+ *    font-family: monospace !important;
+ * }
+ */
+
+/*
+ * Eliminate the throbber and its annoying movement:
+ *
+ * #throbber-box {
+ *   display: none !important;
+ * }
+ */
+
+/*
+ * For more examples see http://www.mozilla.org/unix/customizing.html
+ */
+</pre>
+</div>
+
+</div> <!-- subtopic-group -->
+  <br>
+  <br>
+        <div id="nnl-footer">
+          <div id="nnl-footer-logo"></div>
+          <div id="nnl-footer-text">
+            <div id="paypal-question">Do you like this theme?  You could <a href="https://www.paypal.com/sendmoney?email=paypal@caffeinated.org">support my time</a> to keep it going.</div>
+          </div>
+        </div>
+      </div> <!-- inner-body-2 -->
+    </div> <!-- inner-body-1 -->
+  </body>
+</html>
